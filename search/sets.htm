@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <httpProtocol>
+        <customHeaders>
+          <add name="Access-Control-Allow-Origin" value="*" />
+          <add name="Access-Control-Allow-Headers" value="Content-Type" />
+          <add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />
+        </customHeaders>
+    </httpProtocol>
+    <meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta"/>
+    <link rel="icon" href="favicon.ico">
+    <script src="d3.v7.min.js"></script>
+    <title>Sets</title>  
+</head>
+<style>
+    p {
+        font-size: 3vw;
+    }
+    td {
+        width: auto;
+    }
+    input[type=submit] {
+        font-size: 10em;
+    }
+td{
+  border: 1px solid black;
+}
+ img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+<body>
+    <!-- Page Header -->
+    <table style="border-collapse: collapse" width="100%" height="131" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
+        <tbody><tr>
+            <td height="131"><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
+            <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font><br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <img src="banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width="743" height="101" border="0"></td> -->
+    <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td>
+        </tr>
+        </tbody></table>
+    <form action="" id="searchForm">
+        <p id="demo">Enter search terms separated by commas</p>
+        <input type="text" id="searchBox">
+        <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+    </form>
+    <table id="myTrains" border="1" width="75%">
+        <tbody id="tableBody">
+    </tbody>
+
+<script>
+    // clear previous search results
+    function replaceTable() {
+        
+        const old_tbody = document.getElementById("tableBody")
+        const new_tbody = document.createElement('tbody');
+        new_tbody.setAttribute("id", "tableBody");
+        old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
+    }
+    
+    // perform actions when submit clicked
+    let searchForm = document.getElementById("searchForm");
+    searchForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let searchTerm = document.getElementById("searchBox");
+
+        if (searchTerm.value == "" ) {
+            alert("Please enter a search value!");
+            } else   {
+                    // perform operation with form input
+
+                    // input the sets table
+                    d3.csv("data/sets.csv").then(function(sets) {
+                        console.log('sets: ',sets);
+
+                        // change " c" track to " curved" and " s" track to " straight"
+                        for (let i = 0; i < sets.length; i++) {
+                           sets[i].Track = sets[i].Track.replace(/ c/," curved");
+                           sets[i].Track = sets[i].Track.replace(/ s/," straight");
+                        }
+                        
+                        tableBody.innerHTML =
+                            `<tr><td>Year</td><td>Set</td><td>Components</td></tr>`;
+                        //var searchArray = searchBox.value.replace(/\s/g, '').split(',');
+                        //var resultsReturned = false;
+                        for (let i = 0; i < sets.length; i++) {
+                            if (sets[i].Year.includes(searchBox.value))   {
+                                tableBody.innerHTML += `<tr><td>${sets[i].Year}</td>` + 
+                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                    `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                    `<b>Transformer: </b>${sets[i].Transformer}</td></tr>`
+                            }
+                        }
+                    });
+             }
+    });
+</script>
+</body>
+</html>

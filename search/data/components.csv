@@ -1,0 +1,715 @@
+﻿Number,Description,Gauge
+44,"locomotive, missile launcher, U.S. Army",O
+45,"locomotive, missile launcher, U.S.M.C.",0-27
+88,"controller, reversing",
+97,"coal elevator, operating",
+109,"trestle set, 12 piece",
+110,"trestle set, graduated",
+112,"switches, pair",O
+114,engine house,HO
+147,"controller, horn or whistle",
+164,lumber shed,
+167,whistle controller,
+175,rocket launcher,
+202,"locomotive, diesel, A unit, UP Alco, powered",0-27
+212,"locomotive, diesel, A unit, U.S.M.C Alco, powered",0-27
+216,"locomotive, diesel, A unit, Burlington Alco, powered",0-27
+221,"locomotive, diesel, A unit, Denver & Rio Grande Alco, powered",0-27
+222,"locomotive, diesel, A unit, Rio Grande Alco, powered",0-27
+224,locomotive,O
+225,"locomotive, diesel, A unit, C & O Alco, powered",0-27
+229,"locomotive, diesel, A unit, M & SL Alco, powered",0-27
+230,"locomotive, diesel, A unit, C & O Alco, powered",0-27
+231,"locomotive, diesel, A unit, Rock Island Alco, powered",0-27
+232,"locomotive, diesel, A unit, New Haven Alco, powered",0-27
+233,"locomotive, 2-4-2",0-27
+236,"locomotive, 2-4-2",0-27
+237,"locomotive, 2-4-2",0-27
+238,"locomotive, 2-4-2",0-27
+239,"locomotive, 2-4-2",0-27
+242,"locomotive, 2-4-2",0-27
+243,"locomotive, 2-4-2",0-27
+244,"locomotive, 2-4-2",0-27
+246,"locomotive, 2-4-2",0-27
+247,"locomotive, 2-4-2, blue-striped",0-27
+249,"locomotive, red-striped, 2-4-2",0-27
+250,"locomotive, 2-4-2",
+260,"bumper, illuminated",
+264,"forklift loader, operating",
+342,culvert loader,
+345,culvert unloader,
+362,barrel loader,
+364,"lumber loader, conveyor",
+400,"locomotive, diesel Budd RDC car, passenger car",O
+404,"locomotive, diesel Budd RDC car, mail-baggage ",O
+448,"range set, millile firing, with 6448 exploding boxcar",
+456,coal ramp,
+464,saw mill,
+470,missile launching platform with 6470 exploding boxcar,
+520,"locomotive, GE box cab",
+600,"locomotive, diesel switcher, MKT NW-2",0-27
+601,"locomotive, diesel switcher, Seaboard NW-2",O
+602,"locomotive, diesel switcher, Seaboard NW-2",0-27
+610,"locomotive, diesel switcher, Erie NW-2 ",0-27
+611,"locomotive, diesel switcher, Jersey Central NW-2",0-27
+613,"locomotive, diesel, switcher, Union Pacific NW-2",0-27
+614,"locomotive, diesel, switcher, Alaskan NW-2",0-27
+616,"locomotive, diesel, switcher, Santa Fe NW-2",O
+617,"locomotive, diesel, switcher, Santa Fe NW-2",O
+621,"locomotive, diesel NW-2 switcher, Jersey Central",0-27
+622,"locomotive, diesel switcher SF bell ringing",O
+623,"locomotive, diesel switcher SF",O
+625,"locomotive, diesel, center cab, Lehigh Valley",0-27
+627,"locomotive, diesel, center cab, Lehigh Valley",0-27
+628,"locomotive, diesel, center cab, Northern Pacific",0-27
+629,"locomotive, diesel, center cab, Burlington",0-27
+633,"locomotive, diesel, switcher, Santa Fe NW-2",0-27
+634,"locomotive, diesel, switcher, Santa Fe NW-2",0-27
+637,"locomotive, 2-6-4",O
+645,"locomotive, diesel, switcher, Union Pacific NW-2",0-27
+646,"locomotive, 4-6-4",O
+665,"locomotive, 4-6-4, w/ feedwater heater",O
+671,"locomotive, turbine 6-8-6",O
+675,"locomotive, 2-6-2 (1949), or 2-6-4 (1952)",O
+681,"locomotive, turbine, 6-8-6",O
+682,"locomotive, turbine, 6-8-6, lubricator linkage",O
+685,"locomotive, 4-6-4",O
+726,"locomotive, Berkshire, 2-8-4",O
+736,"locomotive, Berkshire, 2-8-4",O
+746,"locomotive, 4-8-4, N & W",O
+773,"locomotive, 4-6-4",O
+943,"ammo dump, exploding",
+1001,"locomotive, scout, 2-4-2",0-27
+1002,"gondola, black",
+1004,"box car, Baby Ruth, orange",
+1005,"tank car, Sunoco",
+1007,"caboose, red SP type",
+1008,"camtrol, uncoupling unit",0-27
+1009,"track, manual uncoupling",
+1010,"transformer, 35 watt",
+1011,"transformer, 25 watt",
+1012,"transformer, 35 watt",
+1014,"transformer, 40 watt",
+1015,"transformer, 45 watt",
+1016,"transformer, 35 watt",
+1019,"track, uncoupling/operating",0-27
+1020,"crossing, 90 degree",0-27
+1025,"transformer, 45 watt",
+1026,"transformer, 25 watt",
+1032,"transformer, 75 watt",
+1033,"transformer, 90 watt",
+1034,"transformer, 75 watt",
+1035,"transformer, 60 watt",
+1037,"transformer, 40 watt",
+1041,"transformer, 60 watt",
+1042,"transformer, 75 watt",
+1043,"transformer, 50 watt",
+1044,"transformer, 90 watt",
+1053,"transformer, 60 watt",
+1055,"locomotive, diesel, A unit, Texas Special Alco, powered",0-27
+1060,"locomotive, 2-4-2",0-27
+1061,"locomotive, 0-4-0 in 1963-64 and 2-4-2 in 1969",0-27
+1062,"locomotive, 2-4-2",0-27
+1063,"transformer, 75 watt",
+1065,"locomotive, diesel, A unit, UP Alco, powered",0-27
+1073,"transformer, 60 watt",
+1110,"locomotive, scout, 2-4-2",0-27
+1120,"locomotive, scout, 2-4-2",0-27
+1121,"switches, pair",0-27
+1122,"switches, pair",0-27
+1130,"locomotive, 2-4-2",0-27
+1615,"locomotive, switcher, 0-4-0 ",0-27
+1625,"locomotive, switcher, 0-4-0 ",0-27
+1654,"locomotive, 2-4-2",O
+1655,"locomotive, 2-4-2",0-27
+1656,"locomotive, switcher, 0-6-0",
+1665,"locomotive, switcher",
+1666,"locomotive, 2-6-2",O
+1862,"locomotive, 4-4-0, general",0-27
+1865,passenger car,0-27
+1866,mail-baggage car,0-27
+1872,"locomotive, 4-4-0, general",O
+1876,"mail-baggage car, illuminated",O
+1877,flatcar with horses,O
+2016,"locomotive, 2-6-4",0-27
+2018,"locomotive, 2-6-4, headlight and smoke",0-27
+2020,"locomotive, turbine, 6-8-6",0-27
+2023,"locomotive, Alco UP Silver and Grey, or Yellow and Grey",0-27
+2024,"locomotive, A unit, C & O Alco, powered",0-27
+2025,"locomotive, 2-6-4",0-27
+2026,"locomotive, 2-6-2",0-27
+2028,"locomotive, diesel, GP-7, Pennsylvania",0-27
+2029,"locomotive, 2-6-4",0-27
+2031,"locomotive, Alco Rock Island",0-27
+2032,"locomotive, Alco Erie",0-27
+2033,"locomotive, Alco UP Silver",0-27
+2034,"locomotive, 2-4-2",0-27
+2035,"locomotive, 2-6-4",0-27
+2036,"locomotive, 2-6-4",0-27
+2037,"locomotive, 2-6-4",0-27
+2046,"locomotive, 4-6-4",0-27
+2055,"locomotive, 4-6-4",0-27
+2065,"locomotive, 4-6-4 w/ feedwater heater",0-27
+2321,"locomotive, FM, Lackawanna, two motors",O
+2322,"locomotive, FM, Virginian, two motors",O
+2328,"locomotive, diesel, GP-7, Burlington",0-27
+2329,"locomotive, electric rectifier, Virginia ",O
+2330,"locomotive, GG1, two motor, green",O
+2331,"locomotive, FM, Virginian, two motors",O
+2332,"locomotive, GG1, single motor",O
+2337,"locomotive, diesel, GP-7, Wabash",0-27
+2338,"locomotive, diesel, GP-7, Milwaukee Road",O
+2339,"locomotive, diesel, GP-7, Wabash",O
+2340,"locomotive, GG1, Pennsylvania, tuscan, two motors",O
+2341,"locomotive, FM, Jersey Central, two motors",O
+2346,"locomotive, diesel, GP-9, Boston and Maine",O
+2348,"locomotive, diesel, GP-9, M & SL",O
+2349,"locomotive, diesel, GP-9, Northern Pacific",0-27
+2350,"locomotive, EP-5, electric, New Haven",O
+2351,"locomotive, EP-5, electric, Milwaukee Road",O
+2352,"locomotive, EP-5, electric, Pennsylvania",O
+2357,"caboose, illuminated, SP type",
+2358,"locomotive, EP-5, electric, Great Northern",O
+2359,"locomotive, diesel, GP-9, Boston and Maine",O
+2360,"locomotive, GG1, Pennsylvania, tuscan, two motors",O
+2365,"locomotive, diesel, GP-7, Chesapeake & Ohio",0-27
+2400,"passenger car, pullman, Maplewood, green",
+2401,"passenger car, observation, Hillside, green",
+2402,"passenger car, pullman, Chatham, green",
+2404,"passenger car, vista dome, Santa Fe, silver with blue letters",0-27
+2405,"passenger car, pullman, Santa Fe, silver with blue letters",0-27
+2406,"passenger car, observation, Santa Fe, silver with blue letters",0-27
+2408,"passenger car, vista dome, Santa Fe, silver with blue letters",0-27
+2409,"passenger car, pullman, Santa Fe, silver with blue letters",0-27
+2410,"passenger car, observation, Santa Fe, silver with blue letters",0-27
+2411,flatcar with pipes,
+2412,"passenger car, vista dome, Santa Fe, silver with blue stripes",0-27
+2414,"passenger car, pullman, Santa Fe, silver with blue stripes",0-27
+2416,"passenger car, observation, Santa Fe, silver with blue stripes",0-27
+2419,"caboose, work",
+2420,"caboose, work with searchlight",
+2421,"passenger car, pullman, Maplewood, silver & grey, or silver & silver",0-27
+2422,"passenger car, pullman, Chatham, silver & grey, or silver & silver",0-27
+2423,"passenger car, observation, Hillside, silver & grey, or silver & silver",0-27
+2429,"passenger car, pullman, Livingston, silver& silver",0-27
+2430,"passenger car, pullman, blue",0-27
+2431,"passenger car, observation, blue",0-27
+2432,"passenger car, Vista Dome, Clifton, silver w/ red letters",0-27
+2434,"passenger car, pullman, Newark, silver w/ red letters",0-27
+2435,"passenger car, pullman, Elizabeth",0-27
+2436,"passenger car, observation, Summit or Mooseheart, silver w/ red letters",0-27
+2440,"passenger car, pullman, illuminated",0-27
+2441,"passenger car, observation, illuminated",0-27
+2442,"passenger car, pullman, brown",0-27
+2443,"passenger car, observation, brown",0-27
+2452,gondola with barrels,
+2454,"boxcar, Baby Ruth",
+2456,"hopper, Lehigh Valley, black",
+2457,"caboose, illuminated Pennsy N5",
+2458,automobile car,
+2460,"crane car, 12 wheel, black",
+2461,flatcar with transformer,
+2465,"tank car, Sunoco two dome",
+2472,"caboose, non-illuminated Pennsy N5",
+2481,"passenger car, pullman, Plainfield, yellow and gray",
+2482,"passenger car, pullman, Westfield, yellow and gray",
+2483,"passenger car, observation, Livingston, yellow and gray",
+2521,"passenger car, observation, President McKinley",O
+2522,"passenger car, vista dome, President Harrison",O
+2523,"passenger car, pullman, President Garfield",O
+2530,"baggage car, Railway Express, large or small door",O
+2531,"passenger car, observation, Silver Dawn, aluminum",O
+2532,"passenger car, Vista Dome, Silver Range, aluminum",O
+2533,"passenger car, pullman, Silver Cloud, aluminum",O
+2534,"passenger car, pullman, Silver Bluff, aluminum",O
+2541,"passenger car, observation, Alexander Hamilton, aluminum",O
+2542,"passenger car, vista dome, Betsy Ross, aluminum",O
+2543,"passenger car, pullman, William Penn, aluminum",O
+2544,"passenger car, pullman, Molly Pitcher, aluminum",O
+2550,"mail-baggage car, Budd",O
+2551,"passenger car, observation, Banff Park, aluminum",O
+2552,"passenger car, Vista Dome, Skyline 500, aluminum",O
+2553,"passenger car, pullman, Blair Manor, aluminum",O
+2554,"passenger car, pullman, Craig Manor, aluminum",O
+2555,"tank car, Sunoco single dome",
+2559,"passenger car, Budd",O
+2560,crane,
+2561,"passenger car, observation, Vista Valley, aluminum with red stripes",O
+2562,"passenger car, vista dome, Regal Pass, aluminum with red stripes",O
+2563,"passenger car, pullman, Indian Falls, aluminum with red stripes",O
+2625,"passenger car, pullman Irvington, tuscan",O
+2627,"passenger car, pullman, Madison",O
+2628,"passenger car, pullman, Manhattan",O
+2855,"tank car, Sunoco single dome",
+2857,"caboose, illuminated  ",
+3309,"flatcar, turbo missile launcher",
+3330,flatcar with submarine kit,
+3349,"flatcar, depressed center, turbo missile launcher",
+3356,"horse car, operating",
+3357,cop and hobo car,
+3359,"coal car, operating, twin-bin",
+3361,"log car, operating",
+3362,"unloading car, helium tank",
+3364,"log car, operating",
+3366,"circus car, operating",
+3370,sheriff and outlaw car,
+3376,giraffe car,
+3386,giraffe car,
+3409,flatcar with helicopter,
+3410,"flatcar with helicopter, manual release",
+3413,"capsule launcher, Mercury",
+3419,flatcar with helicopter,
+3424,"brakeman car, operating, Wabash",
+3428,"boxcar, operating, U.S. Mail",
+3429,"flatcar, olive, with helicopter, U.S.M.C",
+3434,"sweeper car, chicken",
+3435,"aquarium car, operating",
+3444,"gondola, operating, cop and hobo",
+3451,"log car, operating",
+3454,"merchandise car, operating",
+3456,"hopper car, operating, used with 456 Coal Ramp set",
+3459,"coal car, operating",
+3461,"log car, operating",
+3462,"milk car, operating",0-27
+3464,"boxcar, operating",
+3469,"coal car, operating",
+3470,aerial target launcher,
+3472,"milk car, operating",
+3482,"milk car, operating",
+3484,"boxcar, operating Pennsy",
+3509,"flatcar, satellite launching, manual",
+3510,"flatcar, satellite launching, manual, red",
+3512,fireman and ladder car,
+3519,"flatcar, satellite launching ",
+3520,searchlight car,
+3530,generator car,
+3535,security car,
+3540,"scanning car, radar",
+3545,"monitor car, TV",
+3559,"coal car, operating",
+3562,"barrel car, operating, black",
+3619,reconnaissance car with copter,
+3620,searchlight car,
+3650,"searchlight car, extension",
+3656,"cattle car, operating",
+3662,"milk car, operating",O
+3665,"boxcar, Minuteman",
+3672,"milk car, operating, Bosco",O
+3820,"flatcar, olive, with submarine, U.S.M.C.",
+3830,flatcar with submarine,
+3854,"merchandise car, operating",
+4357,"caboose, SP type, Electronic Set",
+4452,"gondola, Electronic Set",
+4454,"boxcar, Electronic Set",
+4457,"caboose, Electronic Set",
+5459,"coal car, operating, Electronic Set",
+6002,"gondola, black",
+6004,"boxcar, orange Baby Ruth",
+6007,"caboose, SP type",
+6009,"track, uncoupling",
+6012,"gondola, black",
+6014,"boxcar, Baby Ruth or Frisco, white or red",
+6015,"tank car, Sunoco, single dome, yellow",
+6017,"caboose, SP type",
+6019,"track, uncoupling/operating",0-27
+6024,"boxcar, Nabisco",
+6025,"tank car, Gulf, single dome, black or orange",
+6027,"caboose, SP type, Alaska",
+6029,"track, uncoupling",0-27
+6032,"gondola, black",
+6035,"tank car, Sunoco single dome",
+6037,"caboose, SP type",
+6042,"gondola with canisters, blue",
+6043,"gondola with canisters, black",
+6044,"boxcar, Airex, blue",
+6045,"tank car, two dome, gray, Lionel Lines",
+6047,"caboose, SP type, red",
+6050,savings bank car,
+6057,"caboose, SP type, orange or unstamped brown",
+6058,"caboose, SP type, C & O",
+6059,"caboose, SP type, M & SL, red or brown",
+6062,"gondola with cable reels, black",
+6076,"hopper, Lehigh Valley, red or black",
+6110,"locomotive, scout, 2-4-2",0-27
+6111,"flatcar with logs, yellow",
+6112,"gondola with canisters, black, white, or blue",
+6119,"caboose, work, red",
+6120,"caboose, unstamped work, yellow",
+6121,flatcar with pipes,
+6130,"caboose, work, Santa Fe",
+6139,"track, uncoupling",0-27
+6142,"gondola with two canisters, green, blue, or unstamped green",
+6149,"track, uncoupling",0-27
+6151,"flatcar, metal, with Range Patrol vehicle",
+6162,"gondola with three canisters, blue",
+6167,"caboose, SP type, unstamped, red or yellow",
+6175,flatcar with rocket,
+6176,"hopper, unstamped, yellow or black",
+6219,"caboose, work, C & O",
+6220,"locomotive, diesel switcher SF bell ringing",0-27
+6250,"locomotive, switcher, Seaboard",0-27
+6257,"caboose, SP  type",
+6262,flatcar with wheels,
+6264,flatcar with lumber,
+6311,"flatcar with pipes, brown",
+6315,"tank car, Gulf chemical",
+6342,"gondola, culvert",
+6343,barrel ramp car,
+6346,"hopper, covered, Alcoa",
+6356,stock car,
+6357,"caboose, illuminated, SP type",
+6361,flatcar with timber,
+6362,flatcar with rail trucks,
+6376,"stock car, circus",
+6402,"flatcar, general type with cable reels or boat, gray or maroon",
+6404,"flatcar, black with brown gray-bumpered auto",
+6405,flatcar with yellow van,
+6406,"flatcar, gray or maroon general style, with gray-bumpered auto",
+6407,flatcar with rocket,
+6408,"flatcar with pipes, red",
+6411,flatcar with logs,
+6413,"capsule carrier, Mercury",
+6414,auto loader,
+6415,"tank car, Sunoco, three dome",
+6416,boat loader,
+6417,"caboose, Pennsy, porthole",
+6419,"caboose, work",
+6424,flatcar with autos,
+6425,"tank car, Gulf, three dome",
+6427,"caboose, porthole, Lionel Lines",
+6428,"boxcar, U.S. Mail",
+6429,"caboose, work, die-cast",
+6430,flatcar with vans,
+6431,flatcar with vans and Midge Toy tractor,
+6434,poultry car,
+6436,"hopper, quad, Lehigh Valley",
+6437,"caboose, illuminated, Pennsylvania porthole",
+6440,"passenger car, pullman, green",
+6441,"passenger, car, observation, green",
+6442,"passenger car, pullman, brown",
+6443,"passenger car, observation, brown",
+6445,"bullion car, Ft Knox",
+6446,"hopper car, N&W covered",
+6447,"caboose, Pennsylvania porthole, non-illuminated",
+6448,"boxcar, exploding",
+6452,gondola,
+6454,boxcar,
+6456,"hopper, Lehigh Valley, black or maroon",
+6457,"caboose, illuminated, SP type",
+6461,flatcar with transformer,
+6462,"gondola, black or green with barrels",
+6463,"tank car, rocket fuel",
+6465,"tank car, Sunoco, Lionel Lines, or Cities Service two dome, gray or orange",
+6467,"bulkhead car, miscellaneous",
+6468,"automobile car, B&O double door",
+6469,"bulkhead car, liquified gas",
+6470,"boxcar, exploding",
+6472,refrigerator car,
+6473,rodeo car,
+6475,"vat car, pickle",
+6476,"hopper, Lehigh Valley, red, grey, yellow, or black",
+6477,"bulkhead car, miscellaneous, with plastic pipes",
+6480,"boxcar, exploding",
+6482,refrigerator car,
+6500,"flatcar, black with red/white airplane",
+6501,flatcar with jet motorboat,
+6502,"flatcar with girder, black or blue",
+6511,"flatcar, with pipes, red",
+6512,cherry picker car,
+6517,"caboose, bay window",
+6518,"flatcar, depressed center, double trucks, transformer",
+6519,"condenser car, Allis Chalmers",
+6520,searchlight car,
+6530,fire prevention car,
+6536,"hopper, M & SL quad",
+6544,missile firing car,
+6555,"tank car, Sunoco, single dome",
+6556,"stock car, Katy",
+6557,"caboose, smoking",
+6560,"crane, grey or red cab",
+6561,"flatcar, depressed center, w/ cable reels",
+6572,"reefer, Railway Express Agency, dark green",
+6630,"flatcar with IRBM launcher, black",
+6636,"hopper, Alaska",
+6640,"flatcar, olive, with I.R.B.M. launcher",
+6646,"stock car, orange",
+6650,flatcar with IRBM launcher,
+6656,stock car,
+6657,"caboose, illuminated, Rio Grande, SP type",
+6660,flatcar with boom crane,
+6672,"reefer, SF",
+6736,"hopper car, Detroit and Mackinac",
+6800,"flatcar with airplane, Beechcraft, black and yellow",
+6801,"flatcar with boat, cream deck and clear windshield",
+6802,flatcar with U.S. Steel bridge,
+6804,flatcar with U.S.M.C. trucks (microwave disc and two guns),
+6805,"flatcar, atomic disposal",
+6806,flatcar with U.S.M.C. trucks (microwave disc and two guns),
+6807,flatcar with military DKW amphibious boat,
+6808,flatcar with U.S.M.C. mobile searchlight truck and two-gun tank,
+6809,flatcar with military trucks (cannon and hostipal van),
+6810,flatcar with white Cooper Jarrett van,
+6812,"maintenance car, track",
+6814,"caboose, medical",
+6816,flatcar with dozer,
+6817,flatcar with scraper,
+6818,flatcar with transformer,
+6819,flatcar with helicopter,
+6820,flatcar with helicopter and missiles,
+6821,flatcar with crates,
+6822,searchlight car,
+6823,flatcar with IRBM missiles,
+6824,"caboose, olive, medical",
+6825,flatcar with trestle,
+6826,flatcar with Christmas Trees,
+6827,flatcar with Harnischfeger power shovel,
+6828,flatcar with Harnischfeger crane,
+6830,flatcar with submarine,
+6844,flatcar with missile,
+1001T,"tender, non-whistling, Scout tinplate",0-27
+1008-50,"track section, camtrol uncoupling",0-27
+1043-500,"transformer, 60 watt, white w/ white cord for Girl's set",
+1050T,"tender, non-whistling, slope back",
+1060T,"tender, non-whistling, streamline",
+1061T,"tender, non-whistling, slope back, unstamped",
+1062T,"tender, non-whistling, slope back",
+110A,"trestle piers, 20 each, type A",
+1130T,"tender, non-whistling",0-27
+1130T-500,"tender, non-whistling, Lionel Lines, pink for Girl's set",
+1615T,"tender, non-whistling, slope back",0-27
+1625T,"tender, non-whistling, slope back",
+1640-100,Presidential whistle stop kit,
+1654T,"tender, non-whistling",
+1862T,"tender, non-whistling",
+1872T,"tender, non-whistling",
+1875W,"passenger car, illuminated, whistle",O
+2020W,"tender, whistling ",
+2023P,"locomotive, UP Alco, A unit, powered",
+2023T,"locomotive, UP Alco, A unit, dummy",
+2032P,"locomotive, Erie Alco, A unit, powered, black",
+2032T,"locomotive, Erie Alco, A unit, dummy, black",
+2033P,"locomotive, UP Alco, A unit, powered, silver and silver",
+2033T,"locomotive, UP Alco, A unit, dummy, silver and silver",
+2037-500,"locomotive, 2-6-4, headlight and smoke, pink for Girl's set",0-27
+2041P,"locomotive, Rock Island Alco, A unit, powered",0-27
+2041T,"locomotive, Rock Island Alco, A unit, dummy",0-27
+2046T,"tender, non-whistling",
+2046W,"tender, whistling, Lionel Lines",
+204P,"locomotive, SF Alco, A unit, powered, blue and yellow",0-27
+204T,"locomotive, SF Alco, A unit, dummy, blue and yellow",
+205P,"locomotive, A unit, Alco powered, Missouri Pacific",0-27
+205T,"locomotive, A unit, Alco dummy, Missouri Pacific",0-27
+208P,"locomotive, A unit, Alco powered, Santa Fe",0-27
+208T,"locomotive, A unit, Alco dummy, Santa Fe",0-27
+209P,"locomotive, A unit, Alco powered, New Haven",0-27
+209T,"locomotive, A unit, Alco dummy, New Haven",0-27
+210P,"locomotive, A unit, Alco powered, Texas Special",0-27
+210T,"locomotive, A unit, Alco dummy, Texas Special",0-27
+211P,"locomotive, A unit, Alco powered, Texas Special",0-27
+211T,"locomotive, A unit, Alco dummy, Texas Special",0-27
+212P,"locomotive, A unit, Alco powered, Santa Fe",0-27
+212T,"locomotive, A unit, Alco dummy, Santa Fe",0-27
+213P,"locomotive, A unit, Alco powered, M & SL",0-27
+213T,"locomotive, A unit, Alco dummy, M & SL",0-27
+217C,"locomotive, B unit, Alco dummy, Boston and Maine",0-27
+217P,"locomotive, A unit, Alco powered, Boston and Maine",0-27
+218C,"locomotive, B unit, Alco dummy, Santa Fe",0-27
+218P,"locomotive, A unit, Alco powered, Santa Fe",0-27
+218T,"locomotive, A unit, Alco dummy, Santa Fe",0-27
+221T,"tender, non-whistling",
+223P,"locomotive, A unit, Alco powered, Santa Fe",0-27
+2240C,"locomotive, F3, B unit, dummy, Wabash",0-27
+2240P,"locomotive, F3, A unit, powered, Wabash, single motor",0-27
+2242C,"locomotive, F3, B unit, dummy, New Haven",O
+2242P,"locomotive, F3, A unit, powered, New Haven, single motor",O
+2243C,"locomotive, F3, B unit, dummy, SF",0-27
+2243P,"locomotive, F3, A unit, powered, SF, single motor",0-27
+2245C,"locomotive, F3, B unit, dummy, Texas Special",0-27
+2245P,"locomotive, F3, A unit, powered, Texas Special, single motor",0-27
+224C,"locomotive, B unit, Alco dummy, U.S. Navy",0-27
+224P,"locomotive, A unit, Alco powered, U.S. Navy",0-27
+229C,"locomotive, B unit, Alco dummy, M & SL",0-27
+229P,"locomotive, A unit, Alco powered, M & SL",0-27
+2333P,"locomotive, F3, pwr A unit, SF or NYC, two motors",O
+2333T,"locomotive, F3 dummy A unit, SF or NYC",O
+233T,"tender, non-whistling, Lionel Lines",
+233W,"tender, whistling, Lionel Lines",
+2340-25,"locomotive, GG1, Pennsylvania, green, two motors",O
+2343C,"locomotive, F3 dummy B unit, SF",O
+2343P,"locomotive, F3 power A unit, SF, two motors",O
+2343T,"locomotive, F3 dummy A unit, SF ",O
+2344C,"locomotive, F3, dummy B unit, NYC",O
+2344P,"locomotive, F3, pwr A unit, NYC, two motors",O
+2344T,"locomotive, F3, dummy A unit, NYC",O
+234T,"tender, non-whistling, Lionel Lines",
+234W,"tender, whistling, Lionel Lines",
+2353C,"locomotive, F3, B unit, dummy, SF",O
+2353P,"locomotive, F3, A unit, powered, SF, two motors",O
+2353T,"locomotive, F3, A unit, dummy, SF",O
+2354C,"locomotive, F3, B unit, dummy, NYC",O
+2354P,"locomotive, F3, A unit, powered, NYC, two motors",O
+2354T,"locomotive, F3, A unit, dummy, NYC",O
+2356C,"locomotive, F3, B unit, dummy, Southern",O
+2356P,"locomotive, F3, A unit, powered, Southern, two motors",O
+2356T,"locomotive, F3, A unit, dummy, Southern",O
+2360-25,"locomotive, GG1, Pennsylvania, green, two motors",O
+2363C,"locomotive, F3, B unit, dummy, Illinois, Central",O
+2363P,"locomotive, F3, A unit, powered, Illinois Central, two motors",O
+2367C,"locomotive, F3, B unit, dummy, Wabash",O
+2367P,"locomotive, F3, A unit, powered, Wabash, two motors",O
+2368C,"locomotive, F3, B unit, dummy, B&O",O
+2368P,"locomotive, F3, A unit, powered, B&O, two motors",O
+2373P,"locomotive, F3, A unit, powered, Canadian Pacific, two motors",O
+2373T,"locomotive, F3, A unit, dummy, Canadian Pacific",O
+2378C,"locomotive, F3, B unit, dummy, Milwaukee Road",O
+2378P,"locomotive, F3, A unit, powered, Milwaukee Road, two motors",O
+2379C,"locomotive, F3, B unit, dummy, Rio Grande",O
+2379P,"locomotive, F3, A unit, powered, Rio Grande, two motors",O
+2383P,"locomotive, F3, A unit, powered, Santa Fe, two motors",O
+2383T,"locomotive, F3, A unit, dummy, Santa Fe",O
+2403B,"tender, slopback, bell ringing",
+2426W,"tender, whistling ",O
+242T,"tender, non-whistling",
+243W,"tender, non-whistling",
+2442-,"passenger car, Vista Dome, Clifton, silver w/ red letters/stripes",0-27
+2444-,"passenger car, pullman, Newark, silver w/ red letters/stripes",0-27
+2446-,"passenger car, observation, Summit, silver w/ red letters/stripes",0-27
+244T,"tender, non-whistling, slope back",
+2452X,gondola,
+2452X,gondola  ,
+2466T,"tender, non-whistling",
+2466W,"tender, whistling ",
+2466WX,"tender, whistling ",
+247T,"tender, non-whistling, B & O",
+250T,"tender, non-whistling, Pennsylvania",
+250T,"tender, non-whistling, Pennsylvania, red-striped",
+2671W,"tender, whistling, streamline, Pennsy, 12 wheel",
+2671WX,"tender, whistling, streamline, Lionel Lines, 12 wheel",
+3349-100,"flatcar, turbo missile launcher",
+3461-25,"log car, operating, green",
+3470-100,aerial target launcher,
+3494-1,"boxcar, operating, Pacemaker",
+3494-275,"boxcar, operating, State of Maine",
+3562-25,"barrel car, operating, grey",
+3562-50,"barrel car, operating, yellow",
+3562-75,"barrel car, operating, orange",
+3619-100,"reconnaissance, copter car",
+3830-75,flatcar with operating submarine,
+39-15,operating packet,
+39-20,operating packet,
+39-25,operating packet,
+39-35,operating packet,
+39-5,operating packet,
+4424W (1946),"tender, whistling, Electronic Set",
+4671W  ,"tender, whistling, Electronic Set",
+4671W (1947),"tender, whistling, Electronic Set",
+6001T,"tender, non-whistling",
+6014-335,"savings bank car, Frisco, white",
+6014-410,"boxcar, Frisco, white",
+6014-85,"boxcar, Frisco, orange with blue lettering",
+6017-100,"caboose, SP type, Boston and Maine",
+6017-185,"caboose, SP type, Santa Fe, gray",
+6017-200,"caboose, SP type, U.S. Navy",
+6017-235,"caboose, SP type, Santa Fe ",
+6017-50,"caboose, SP type, U.S.M.C.",
+6020W,"tender, whistling, Lionel Lines",
+6026T,"tender, non-whistling, Lionel Lines",
+6026W,"tender, whistling, Lionel Lines",
+6042-250,"gondola, unstamped",
+6042-75,"gondola with cable reels, blue",
+6050-110,"bank car, Swift Savings, red",
+6066T,"tender, non-whistling, Lionel Lines",
+6076-100,"hopper, unstamped, gray",
+6076-75,"hopper, Lehigh Valley, black",
+6119-100,"caboose, work, red",
+6119-25,"caboose, work, orange",
+6119-75,"caboose, work, grey",
+6142-100,"gondola with two canisters, blue",
+6142-125,"gondola, blue",
+6142-150,"gondola with cable reels, blue or green",
+6142-75,"gondola with two canisters, green",
+6162-25,"gondola with canisters, blue",
+6162-60,"gondola with canisters, Alaskan",
+6167-100,"caboose, SP type, red",
+6167-125,"caboose, SP type, unstamped, red",
+6167-25,"caboose, SP type, unstamped",
+6167-50,"caboose, SP type, unstamped, yellow",
+6167-85,"caboose, SP type, Union Pacific",
+6176-50,"hopper, Lehigh Valley, black",
+6176-75,"hopper, Lehigh Valley, yellow",
+6257-100,"caboose, SP type, red with stack",
+6257X,"caboose, SP  type",
+6357-50,"caboose, SP type, illuminated",
+6402-50,"flatcar with cable reels, general type, gray",
+6409-25,"flatcar with pipes, red",
+6414-150,auto loader,
+6417-25,"caboose, porthole, Lionel Lines",
+6417-50,"caboose, Lehigh Valley, grey",
+6419-100,"caboose, work, N & W",
+6419-25,"caboose, work",
+6419-50,"caboose, work",
+6427-500,"caboose, Pennsylvania, blue for Girl's set",
+6427-60,"caboose, Virginian, porthole",
+6436-100,"hopper, Lehigh Valley, quad",
+6436-110,"hopper, Lehigh Valley, quad",
+6436-25,"hopper, Lehigh Valley, maroon, quad",
+6436-500,"hopper, Lehigh Valley, lilac for Girl's set",
+6440-,flatcar with vans,
+6446-25,"hopper, N & W, grey, covered",
+6446-60,"hopper, Lehigh Valley, covered",
+6456-25,"hopper car, Lehigh Valley, grey",
+6456-75,"hopper, Lehigh Valley, red enamel paint",
+6460-25,"crane, red cab",
+6462-125,"gondola with barrels, red",
+6462-25,"gondola with barrels, green",
+6462-500,"gondola with canisters, pink for Girl's set",
+6462-75,"gondola with barrels, red",
+6464-1,"box car, Western Pacific",
+6464-100,"boxcar, Western Pacific, blue or yellow feather",
+6464-150,"boxcar, Missouri Pacific",
+6464-175,"boxcar, Rock Island",
+6464-225,"boxcar, Southern Pacific",
+6464-25,"boxcar, Great Northern",
+6464-275,"boxcar, State of Maine",
+6464-300,"boxcar, Rutland",
+6464-375,"boxcar, Central of Georgia",
+6464-400,"boxcar, B&O",
+6464-425,"boxcar, New Haven",
+6464-450,"boxcar, Great Northern",
+6464-475,"boxcar, Boston & Maine",
+6464-50,"boxcar, M & St L",
+6464-500,"boxcar, Timken",
+6464-510,"boxcar, Pacemaker, blue-green for Girl's set",
+6464-515,"boxcar, Katy, yellow for Girl's set",
+6464-525,"boxcar, M & St L",
+6464-650,"boxcar, Rio Grande",
+6464-725,"boxcar, New Haven, orange",
+6464-75,"boxcar, Rock Island",
+6464-825,"boxcar, Alaska",
+6464-900,"boxcar, NYC",
+6465-150,"tank car, two dome, orange, Lionel Lines",
+6466T,"tender, non-whistling",
+6466W ,"tender, whistling, Lionel Lines",
+6466WX,"tender, whistling, Lionel Lines",
+6468-25,"automobile car, double door, New Haven",
+6468X,"automobile car, B&O double door, tuscan",
+6476-75,"hopper, Lehigh Valley, black or red",
+6560-25,"crane, red cab",
+6562-50,"gondola with canisters, black",
+6562-50,"gondola with canisters, black",
+6654W,"tender, whistling, tinplate Lionel Lines",0-27
+671R,"locomotive, turbine 6-8-6 Electronic Set",O
+671W,"tender, whistling",
+6822-50,searchlight car,
+736W,"tender, whistling, Pennsylvania",
+746W,"tender, whistling, N & W",O
+773W,"tender, whistling, NYC",
+ECU-1,Electronic Control Unit,
+HO set,matches components of super O set 2555W,0-27
+LW,"transformer, 125 watt",
+RCS,"track, uncoupling/operating, 5 rail",O
+S,"transformer, 80 watts",
+T022,"track, switches, remote control, without constant voltage plug",O
+UCS,"track, uncoupling/operating, 5 rail w/ electromagnet",O
+unlettered,"caboose, SP type without end rails, red or yellow",
+ZW,"transformer, 275 watt",
