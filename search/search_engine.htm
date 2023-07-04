@@ -31,6 +31,7 @@ td{
   }
 </style>
 <body>
+
     <!-- Page Header -->
     <table style="border-collapse: collapse" width="100%" height="131" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
         <tbody><tr>
@@ -71,53 +72,32 @@ td{
             // perform operation with form input
 
             // input the components table
-            d3.csv("data/sets.csv").then(function(data) {
-                console.log('sets: ',data);
-                
-                tableBody.innerHTML =
-                    '<tr><td>Number</td><td>Year</td><tdPrice (Retail)</td><td>Description</td><td>Track</td><td>Transformer</td><td>Year</td></tr>';
-                //var searchArray = searchBox.value.replace(/\s/g, '').split(',');
-                //var resultsReturned = false;
-                for (let i = 0; i < 10; i++) {
-                    //  for (let j = 0; j < searchArray.length; j++) {
-                    //     if ((components[i].Description.toLowerCase().includes(searchArray[j].toLowerCase())) || 
-                    //     (components[i].Number.toLowerCase() == (searchArray[j].toLowerCase())))  {
-                    //         resultsReturned = true;
-                    //         let image = '../images/' + components[i].Number + '_web.JPG';
-                    tableBody.innerHTML += `<tr><td>${sets[i].Number} ${sets[i].Year} + </td></tr>`
-                //         ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + 
-                //         `</td><td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
-                //         `<b>Gauge:</b> ${components[i].Gauge}</td></td></tr>`;
-                 }
-                    }
-                
-                // if (!resultsReturned) {
-                //     alert("No results match search criteria");
-                // }
+            d3.csv("data/components.csv").then(function(components) {
+                console.log('components: ',components);
 
-                // tableBody.innerHTML =
-                //     '<tr><td>Picture</td><td>Description</td>';
-                // var searchArray = searchBox.value.replace(/\s/g, '').split(',');
-                // var resultsReturned = false;
-                // for (let i = 0; i < components.length; i++) {
-                //      for (let j = 0; j < searchArray.length; j++) {
-                //         if ((components[i].Description.toLowerCase().includes(searchArray[j].toLowerCase())) || 
-                //         (components[i].Number.toLowerCase() == (searchArray[j].toLowerCase())))  {
-                //             resultsReturned = true;
-                //             let image = '../images/' + components[i].Number + '_web.JPG';
-                //             tableBody.innerHTML += `<tr><td><img src=` + image + ` alt="Image not found"` +
-                //                 ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + 
-                //                 `</td><td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
-                //                 `<b>Gauge:</b> ${components[i].Gauge}</td></td></tr>`;
-                //         }
-                //     }
-                // }
-                // if (!resultsReturned) {
-                //     alert("No results match search criteria");
-                // }
-            // });
+                tableBody.innerHTML =
+                    '<tr><td>Picture</td><td>Description</td>';
+                var searchArray = searchBox.value.replace(/\s/g, '').split(',');
+                var resultsReturned = false;
+                for (let i = 0; i < components.length; i++) {
+                     for (let j = 0; j < searchArray.length; j++) {
+                        if ((components[i].Description.toLowerCase().includes(searchArray[j].toLowerCase())) || 
+                        (components[i].Number.toLowerCase() == (searchArray[j].toLowerCase())))  {
+                            resultsReturned = true;
+                            let image = '../images/' + components[i].Number + '_web.JPG';
+                            tableBody.innerHTML += `<tr><td><img src=` + image + ` alt="Image not found"` +
+                                ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + 
+                                `</td><td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
+                                `<b>Gauge:</b> ${components[i].Gauge}</td></td></tr>`;
+                        }
+                    }
+                }
+                if (!resultsReturned) {
+                    alert("No results match search criteria");
+                }
+            });
         }
-    );
+    });
 </script>
 </body>
 </html>
