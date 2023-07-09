@@ -14,7 +14,7 @@
 </head>
 <style>
     p {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     td {
         width: auto;
@@ -40,14 +40,31 @@ td{
     <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td>
         </tr>
         </tbody></table>
-    <form action="" id="searchForm">
-        <p id="demo">Enter search terms separated by commas</p>
-        <input type="text" id="searchBox">
-        <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
-    </form>
-    <table id="myTrains" border="1" width="75%">
-        <tbody id="tableBody">
-    </tbody>
+        <table><tbody>
+            <td>
+                <!-- <form action="" id="searchComponents">
+                    <p>Enter component (e.g., diesel or loco,car)</p>
+                    <input type="text" id="searchComponentBox">
+                    <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+                </form> -->
+            </td><td>
+                <p>or</p>
+            </td><td>
+                <form action="" id="searchSets">
+                <p>Enter set year (e.g., 1956 or 1960-1965)</p>
+                <input type="text" id="searchSetBox">
+                <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+                </form>
+            </td></tr> 
+        </tbody></table>
+
+        <table id="returnCount" border="1" width="75%">
+            <tbody id="returnBody">
+        </tbody>
+        <table id="myTrains" border="1" width="75%">
+            <tbody id="tableBody">
+        </tbody>
+
 
 <script>
     // clear previous search results
@@ -60,10 +77,10 @@ td{
     }
     
     // perform actions when submit clicked
-    let searchForm = document.getElementById("searchForm");
+    let searchForm = document.getElementById("searchSets");
     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        let searchTerm = document.getElementById("searchBox");
+        let searchTerm = document.getElementById("searchSetBox");
 
         if (searchTerm.value == "" ) {
             alert("Please enter a search value!");
@@ -80,18 +97,41 @@ td{
                            sets[i].Track = sets[i].Track.replace(/ s/," straight");
                         }
                         
-                        tableBody.innerHTML =
+
+                        var searchSetArray = searchSetBox.value.split('-');
+                        var searchYear = [];
+                        searchYear[0] = searchSetArray[0];
+                        console.log(searchSetArray.length, searchSetArray[0], searchSetArray[1]);
+                        if (searchSetArray.length == 2) {
+                            var yearPtr = 0;
+                            for (let i = searchSetArray[0]; i<= searchSetArray[1]; i++) {
+                                searchYear[yearPtr++] = i.toString();
+                            }
+                        };
+
+                        let resultTable =
                             `<tr><td>Year</td><td>Set</td><td>Components</td></tr>`;
-                        //var searchArray = searchBox.value.replace(/\s/g, '').split(',');
-                        //var resultsReturned = false;
+                        let returnCount = 0
+                        var linePrinted = [];
                         for (let i = 0; i < sets.length; i++) {
-                            if (sets[i].Year.includes(searchBox.value))   {
-                                tableBody.innerHTML += `<tr><td>${sets[i].Year}</td>` + 
-                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
-                                    `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
-                                    `<b>Transformer: </b>${sets[i].Transformer}</td></tr>`
+                            for (let j = 0; j < searchYear.length; j++) {
+                                //console.log(i, j, sets[i].Year,searchYear[j])
+                                if (sets[i].Year.includes(searchYear[j]))   {
+                                    if (!linePrinted.includes(i)) {
+                                        linePrinted.push(i);
+                                        console.log(linePrinted);
+                                        returnCount++;
+                                        resultTable += `<tr><td>${sets[i].Year}</td>` + 
+                                            `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                            `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                            `<b>Transformer: </b>${sets[i].Transformer}</td></tr>`
+                                    }
+                                }
                             }
                         }
+                        returnBody.innerHTML = "<table><tr><td>Number of Sets returned = " + returnCount + 
+                            "</td></tr></table>";
+                        tableBody.innerHTML = resultTable;
                     });
              }
     });
