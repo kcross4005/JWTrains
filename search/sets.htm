@@ -42,20 +42,21 @@ td{
         </tbody></table>
         <table><tbody>
             <td>
-                <!-- <form action="" id="searchComponents">
-                    <p>Enter component (e.g., diesel or loco,car)</p>
-                    <input type="text" id="searchComponentBox">
-                    <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
-                </form> -->
-            </td><td>
-                <p>or</p>
-            </td><td>
+
                 <form action="" id="searchSets">
                 <p>Enter set year (e.g., 1956 or 1960-1965)</p>
                 <input type="text" id="searchSetBox">
                 <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
                 </form>
-            </td></tr> 
+            </td><td>
+                <p>--- or ---</p>
+            </td><td>
+            <form action="" id="searchComponents">
+                <p>Enter component (e.g., "diesel" or "loco,car")</p>
+                <input type="text" id="searchComponentBox">
+                <!-- <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button> -->
+            </form>
+            </td></tr>
         </tbody></table>
 
         <table id="returnCount" border="1" width="75%">
@@ -90,48 +91,54 @@ td{
                     // input the sets table
                     d3.csv("data/sets.csv").then(function(sets) {
                         console.log('sets: ',sets);
+                        d3.csv("data/components.csv").then(function(components) {
+                            console.log('components: ',components);
 
-                        // change " c" track to " curved" and " s" track to " straight"
-                        for (let i = 0; i < sets.length; i++) {
-                           sets[i].Track = sets[i].Track.replace(/ c/," curved");
-                           sets[i].Track = sets[i].Track.replace(/ s/," straight");
-                        }
-                        
-
-                        var searchSetArray = searchSetBox.value.split('-');
-                        var searchYear = [];
-                        searchYear[0] = searchSetArray[0];
-                        console.log(searchSetArray.length, searchSetArray[0], searchSetArray[1]);
-                        if (searchSetArray.length == 2) {
-                            var yearPtr = 0;
-                            for (let i = searchSetArray[0]; i<= searchSetArray[1]; i++) {
-                                searchYear[yearPtr++] = i.toString();
+                            // change " c" track to " curved" and " s" track to " straight"
+                            for (let i = 0; i < sets.length; i++) {
+                            sets[i].Track = sets[i].Track.replace(/ c/," curved");
+                            sets[i].Track = sets[i].Track.replace(/ s/," straight");
                             }
-                        };
+                            
 
-                        let resultTable =
-                            `<tr><td>Year</td><td>Set</td><td>Components</td></tr>`;
-                        let returnCount = 0
-                        var linePrinted = [];
-                        for (let i = 0; i < sets.length; i++) {
-                            for (let j = 0; j < searchYear.length; j++) {
-                                //console.log(i, j, sets[i].Year,searchYear[j])
-                                if (sets[i].Year.includes(searchYear[j]))   {
-                                    if (!linePrinted.includes(i)) {
-                                        linePrinted.push(i);
-                                        console.log(linePrinted);
-                                        returnCount++;
-                                        resultTable += `<tr><td>${sets[i].Year}</td>` + 
-                                            `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
-                                            `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
-                                            `<b>Transformer: </b>${sets[i].Transformer}</td></tr>`
+                            var searchSetArray = searchSetBox.value.split('-');
+                            var searchYear = [];
+                            searchYear[0] = searchSetArray[0];
+                            console.log(searchSetArray.length, searchSetArray[0], searchSetArray[1]);
+                            if (searchSetArray.length == 2) {
+                                var yearPtr = 0;
+                                for (let i = searchSetArray[0]; i<= searchSetArray[1]; i++) {
+                                    searchYear[yearPtr++] = i.toString();
+                                }
+                            };
+
+                            let resultTable =
+                                `<tr><td>Year</td><td>Set</td><td>Components</td></tr>`;
+                            let returnCount = 0
+                            var linePrinted = [];
+                            for (let i = 0; i < sets.length; i++) {
+                                for (let j = 0; j < searchYear.length; j++) {
+                                    //console.log(i, j, sets[i].Year,searchYear[j])
+                                    if (sets[i].Year.includes(searchYear[j]))   {
+                                        if (!linePrinted.includes(i)) {
+                                            linePrinted.push(i);
+                                            returnCount++;
+                                            resultTable += `<tr><td>${sets[i].Year}</td>` + 
+                                                `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                                `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                                `<b>Transformer: </b>${sets[i].Transformer}</td><td>`;
+                                                for (let k = i; k <= i+2; k++) {
+                                                    resultTable += `<b>Number</b> ${components[k].Number}<b>: </b>${components[k].Description}<br>`
+                                                } 
+                                                resultTable += `</td></tr>`;
+                                        }
                                     }
                                 }
                             }
-                        }
-                        returnBody.innerHTML = "<table><tr><td>Number of Sets returned = " + returnCount + 
-                            "</td></tr></table>";
-                        tableBody.innerHTML = resultTable;
+                            returnBody.innerHTML = "<table><tr><td>Number of Sets returned = " + returnCount + 
+                                "</td></tr></table>";
+                            tableBody.innerHTML = resultTable;
+                        });
                     });
              }
     });
