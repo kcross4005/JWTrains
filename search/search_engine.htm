@@ -8,16 +8,16 @@
         </customHeaders>
     </httpProtocol>
     <meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta"/>
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <script src="d3.v7.min.js"></script>
     <title>Model Train Search Engine</title>  
 </head>
 <style>
     p {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     td {
-        width: 50%;
+        width: auto;
     }
     input[type=submit] {
         font-size: 10em;
@@ -38,14 +38,31 @@ td{
             <td height="131"><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
             <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font><br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- <img src="banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width="743" height="101" border="0"></td> -->
-    <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td>
-        </tr>
-        </tbody></table>
-    <form action="" id="searchForm">
-        <p id="demo">Enter search terms separated by commas</p>
-        <input type="text" id="searchBox">
-        <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
-    </form>
+    <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td></tr>
+    </tbody></table>
+    <table><tbody>
+        <tr><td>
+
+            <form action="" id="searchSets">
+            <p>Enter set year (e.g., 1956 or 1960-1965)</p>
+            <input type="text" id="searchSetBox">
+            <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+            </form>
+        </td></tr>
+        <!-- <td>
+            <p>--- or ---</p>
+        </td><td>
+        <form action="" id="searchComponents">
+            <p>Enter component (e.g., "diesel" or "loco,car")</p>
+            <input type="text" id="searchComponentBox">
+            <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+        </form>
+        </td></tr> -->
+    </tbody></table>
+
+    <table id="returnCount" border="1" width="75%">
+        <tbody id="returnBody">
+    </tbody></table>
     <table id="myTrains" border="1" width="75%">
         <tbody id="tableBody">
     </tbody>
@@ -59,44 +76,95 @@ td{
         new_tbody.setAttribute("id", "tableBody");
         old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
     }
+
+    // Create HTML sequence containing the Number and description of the components in the set
+    function makeComponentList(relationship, components, searchValue) {
+        const result = relationship.filter(e => e.SetNum === searchValue);
+        //console.log("xx", result, searchValue);
+
+        let componentHTML = "";
+        for (let i=0; i < result.length; i++) {
+            let temp = components.find(obj => {
+            //console.log("e:",result[i].ComponentNum);
+                return obj.Number === result[i].ComponentNum
+            })
+            //console.log("aa: ",temp, result[i]);
+            if (typeof temp === 'undefined') {
+                componentHTML += `<b>Number: </b>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font><br>`;
+            }
+            else {
+                componentHTML += `<b>Number: </b>${temp.Number}<b> Description: </b>${temp.Description}<br>`;
+            }
+        }
+        return(componentHTML);
+    }
     
-    // perform actions when submit clicked
-    let searchForm = document.getElementById("searchForm");
-    searchForm.addEventListener("submit", (e) => {
+     // perform actions when submit clicked
+     let searchForm = document.getElementById("searchSets");
+     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        let searchTerm = document.getElementById("searchBox");
+        let searchTerm = document.getElementById("searchSetBox");
 
         if (searchTerm.value == "" ) {
             alert("Please enter a search value!");
-        } else {
-            // perform operation with form input
+            } else   {
+                    // perform operation with form input
 
-            // input the components table
-            d3.csv("data/components.csv").then(function(components) {
-                console.log('components: ',components);
+                    // input all data trables
+                    d3.csv("data/sets.csv").then(function(sets) {
+                        console.log('sets: ',sets);
+                        d3.csv("data/components.csv").then(function(components) {
+                            console.log('components: ',components);
+                                d3.csv("data/relationship.csv").then(function(relationship) {
+                                    console.log('relationship: ',relationship);
 
-                tableBody.innerHTML =
-                    '<tr><td>Picture</td><td>Description</td>';
-                var searchArray = searchBox.value.replace(/\s/g, '').split(',');
-                var resultsReturned = false;
-                for (let i = 0; i < components.length; i++) {
-                     for (let j = 0; j < searchArray.length; j++) {
-                        if ((components[i].Description.toLowerCase().includes(searchArray[j].toLowerCase())) || 
-                        (components[i].Number.toLowerCase() == (searchArray[j].toLowerCase())))  {
-                            resultsReturned = true;
-                            let image = '../images/' + components[i].Number + '_web.JPG';
-                            tableBody.innerHTML += `<tr><td><img src=` + image + ` alt="Image not found"` +
-                                ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + 
-                                `</td><td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
-                                `<b>Gauge:</b> ${components[i].Gauge}</td></td></tr>`;
-                        }
-                    }
-                }
-                if (!resultsReturned) {
-                    alert("No results match search criteria");
-                }
-            });
-        }
+                                    // In set array, change " c" track to " curved" and " s" track to " straight"
+                                    for (let i = 0; i < sets.length; i++) {
+                                        sets[i].Track = sets[i].Track.replace(/ c/," curved");
+                                        sets[i].Track = sets[i].Track.replace(/ s/," straight");
+                                    }
+
+                                    // Find all the years from the search box to search for
+                                    var searchSetArray = searchSetBox.value.split('-');
+                                    var searchYear = [];
+                                    searchYear[0] = searchSetArray[0];
+                                    console.log(searchSetArray.length, searchSetArray[0], searchSetArray[1]);
+                                    if (searchSetArray.length == 2) {
+                                        var yearPtr = 0;
+                                        for (let i = searchSetArray[0]; i<= searchSetArray[1]; i++) {
+                                            searchYear[yearPtr++] = i.toString();
+                                        }
+                                    };
+                                    console.log(searchSetBox.value);
+
+                                // Create the output result table
+                                let resultTable =
+                                    `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
+                                let returnCount = 0
+                                var linePrinted = [];
+                                for (let i = 0; i < sets.length; i++) {
+                                    for (let j = 0; j < searchYear.length; j++) {
+                                        //console.log(i, j, sets[i].Year,searchYear[j])
+                                        if (sets[i].Year.includes(searchYear[j]))   {
+                                            if (!linePrinted.includes(i)) {
+                                                linePrinted.push(i);
+                                                returnCount++;
+                                                let componentList = makeComponentList(relationship, components, sets[i].Number);
+                                                resultTable += `<tr><td>${sets[i].Year}</td>` + 
+                                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                                    `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                                    `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                            }
+                                        }
+                                    }
+                                }
+                                returnBody.innerHTML = "<table><tr><td>Number of Sets returned = " + returnCount + 
+                                    "</td></tr></table>";
+                                tableBody.innerHTML = resultTable;
+                                });
+                        });
+                    });
+             }
     });
 </script>
 </body>
