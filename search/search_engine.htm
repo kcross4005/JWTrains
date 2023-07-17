@@ -78,28 +78,35 @@
     // clear previous search results
     function replaceTable() {
         
-        const old_tbody = document.getElementById("compBody")
-        const new_tbody = document.createElement('tbody');
-        new_tbody.setAttribute("id", "compBody");
-        old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
+        let tBodies = ["compBody","setBody"];
+        for (let i=0; i<tBodies.length; i++) {
+            let old_tbody = document.getElementById(tBodies[i]);
+            let new_tbody = document.createElement('tbody');
+            new_tbody.setAttribute("id", tBodies[i]);
+            old_tbody.parentNode.replaceChild(new_tbody, old_tbody);
+        }
     }
 
     // For returned set data, create table containing the Number and Description of the components in the set
     function makeComponentTable(relationship, components, searchValue) {
         const result = relationship.filter(e => e.SetNum === searchValue);
-
-        let componentHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
-            `<tbody><tr><td><b>Component #</b></td><td><b>Description</b></td></tr>`;
-        for (let i=0; i < result.length; i++) {
-            let temp = components.find(obj => {
-                return obj.Number === result[i].ComponentNum
-            })
-            if (typeof temp === 'undefined') {
-                componentHTML += `<tr><td>${result[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
+        let componentHTML = '';
+        if (result.length != 0) {
+            componentHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
+                `<tbody><tr><td><b>Component #</b></td><td><b>Description</b></td></tr>`;
+            for (let i=0; i < result.length; i++) {
+                let temp = components.find(obj => {
+                    return obj.Number === result[i].ComponentNum
+                })
+                if (typeof temp === 'undefined') {
+                    componentHTML += `<tr><td>${result[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
+                }
+                else {
+                    componentHTML += `<tr><td>${temp.Number}</td><td>${temp.Description}</td></tr>`;
+                }
             }
-            else {
-                componentHTML += `<tr><td>${temp.Number}</td><td>${temp.Description}</td></tr>`;
-            }
+        } else {
+            componentHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">No Components are contained in this set.</font>'
         }
         componentHTML += '</tbody></table>';
         return(componentHTML);
@@ -108,22 +115,25 @@
     // For returned component data, create table containing the Number and Year of the sets containing the comonents
     function makeSetTable(relationship, sets, searchValue) {
         const result = relationship.filter(e => e.ComponentNum === searchValue);
-
-        // if (!result.length == 0) 
-        let setHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
-            `<tbody><tr><td><b>Set #</b></td><td><b>Year</b></td></tr>`;
-        for (let i=0; i < result.length; i++) {
-            let temp = sets.find(obj => {
-                return obj.Number === result[i].SetNum
-            })
-            if (typeof temp === 'undefined') {
-                setHTML += `<tr><td>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font></tr>`;
+        let setHTML = '';
+        if (result.length != 0) {
+            setHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
+                `<tbody><tr><td><b>Set #</b></td><td><b>Year</b></td></tr>`;
+            for (let i=0; i < result.length; i++) {
+                let temp = sets.find(obj => {
+                    return obj.Number === result[i].SetNum
+                })
+                if (typeof temp === 'undefined') {
+                    setHTML += `<tr><td>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font></tr>`;
+                }
+                else {
+                    setHTML += `<tr><td>${temp.Number}</td><td>${temp.Year}</td></tr>`;
+                }
             }
-            else {
-                setHTML += `<tr><td>${temp.Number}</td><td>${temp.Year}</td></tr>`;
-            }
+            setHTML += '</tbody></table>';
+        } else {
+            setHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">No Sets contain this component.</font>'
         }
-        setHTML += '</tbody></table>';
         return(setHTML);
 
     }   
@@ -172,7 +182,7 @@
 
                     // input all data tables
                     d3.csv("data/sets.csv").then(function(sets) {
-                        //console.log('sets: ',sets);
+                        // console.log('sets: ',sets);
                         d3.csv("data/components.csv").then(function(components) {
                             //console.log('components: ',components);
                                 d3.csv("data/relationship.csv").then(function(relationship) {
