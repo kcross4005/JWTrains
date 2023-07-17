@@ -8,95 +8,155 @@
         </customHeaders>
     </httpProtocol>
     <meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta"/>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
     <link rel="icon" href="favicon.ico">
     <script src="d3.v7.min.js"></script>
     <title>Model Train Search Engine</title>  
 </head>
 <style>
     p {
-        font-size: 2vw;
-    }
-    td {
-        width: auto;
+        font-size: 16pt;
     }
     input[type=submit] {
         font-size: 10em;
     }
-td{
-  border: 1px solid black;
-}
- img {
-    width: 100%;
-    height: auto;
-  }
+    td{
+        border: 1px solid black;
+        width: auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
 </style>
 <body>
 
-    <!-- Page Header -->
+    <!-- Page Header, search box -->
     <table style="border-collapse: collapse" width="100%" height="131" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
         <tbody><tr>
             <td height="131"><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
             <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font><br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- <img src="banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width="743" height="101" border="0"></td> -->
     <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td></tr>
-    </tbody></table>
-    <table><tbody>
-        <tr><td>
-
+    <tr><td><p>Enter set year (e.g., 1956 or 1960-1965) or component number/description (e.g., 44 or locomotive or diesel, car)</d></tr>
+    <tr><td>
             <form action="" id="searchSets">
-            <p>Enter set year (e.g., 1956 or 1960-1965)</p>
             <input type="text" id="searchSetBox">
             <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
             </form>
         </td></tr>
-        <!-- <td>
-            <p>--- or ---</p>
-        </td><td>
-        <form action="" id="searchComponents">
-            <p>Enter component (e.g., "diesel" or "loco,car")</p>
-            <input type="text" id="searchComponentBox">
-            <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
-        </form>
-        </td></tr> -->
     </tbody></table>
 
-    <table id="returnCount" border="1" width="75%">
+    <!-- table to hold # items returned -->
+    <table id="returnCount" border="1" width="100%">
         <tbody id="returnBody">
     </tbody></table>
-    <table id="myTrains" border="1" width="75%">
-        <tbody id="tableBody">
-    </tbody>
+
+    <!-- table to hold returned components -->
+    <table id="myComponents" border="1" width="100%">
+        <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+        </colgroup>
+        <tbody id="compBody">
+    </tbody></table>
+
+    <!-- table to hold returned sets -->
+    <table id="mySets" border="1" width="100%">
+        <colgroup>
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 30%;">
+            <col span="1" style="width: 60%;">
+        </colgroup>
+        <tbody id="setBody">
+    </tbody></table>
 
 <script>
     // clear previous search results
     function replaceTable() {
         
-        const old_tbody = document.getElementById("tableBody")
+        const old_tbody = document.getElementById("compBody")
         const new_tbody = document.createElement('tbody');
-        new_tbody.setAttribute("id", "tableBody");
+        new_tbody.setAttribute("id", "compBody");
         old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
     }
 
-    // Create HTML sequence containing the Number and description of the components in the set
-    function makeComponentList(relationship, components, searchValue) {
+    // For returned set data, create table containing the Number and Description of the components in the set
+    function makeComponentTable(relationship, components, searchValue) {
         const result = relationship.filter(e => e.SetNum === searchValue);
-        //console.log("xx", result, searchValue);
 
-        let componentHTML = "";
+        let componentHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
+            `<tbody><tr><td><b>Component #</b></td><td><b>Description</b></td></tr>`;
         for (let i=0; i < result.length; i++) {
             let temp = components.find(obj => {
-            //console.log("e:",result[i].ComponentNum);
                 return obj.Number === result[i].ComponentNum
             })
-            //console.log("aa: ",temp, result[i]);
             if (typeof temp === 'undefined') {
-                componentHTML += `<b>Number: </b>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font><br>`;
+                componentHTML += `<tr><td>${result[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
             }
             else {
-                componentHTML += `<b>Number: </b>${temp.Number}<b> Description: </b>${temp.Description}<br>`;
+                componentHTML += `<tr><td>${temp.Number}</td><td>${temp.Description}</td></tr>`;
             }
         }
+        componentHTML += '</tbody></table>';
         return(componentHTML);
+    }
+
+    // For returned component data, create table containing the Number and Year of the sets containing the comonents
+    function makeSetTable(relationship, sets, searchValue) {
+        const result = relationship.filter(e => e.ComponentNum === searchValue);
+
+        // if (!result.length == 0) 
+        let setHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
+            `<tbody><tr><td><b>Set #</b></td><td><b>Year</b></td></tr>`;
+        for (let i=0; i < result.length; i++) {
+            let temp = sets.find(obj => {
+                return obj.Number === result[i].SetNum
+            })
+            if (typeof temp === 'undefined') {
+                setHTML += `<tr><td>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font></tr>`;
+            }
+            else {
+                setHTML += `<tr><td>${temp.Number}</td><td>${temp.Year}</td></tr>`;
+            }
+        }
+        setHTML += '</tbody></table>';
+        return(setHTML);
+
+    }   
+
+    // parse search box and rturn search terms
+    function parseSearchBox(searchTerm) {
+
+        // Parse set input search terms
+        let searchType = "set";
+        let returnVal = [];
+
+        if (searchTerm.slice(0,2) === "19") {
+        
+            var searchArray = searchTerm.split('-');
+            returnVal[0] = searchArray[0];
+            if (searchArray.length == 2) {
+                var yearPtr = 0;
+                for (let i = searchArray[0]; i<= searchArray[1]; i++) {
+                    returnVal[yearPtr++] = i.toString();
+                }
+            }
+
+        } else {
+            // process component search by description
+            searchType = "component";
+            returnVal = searchTerm.split(',');
+        }
+
+        // Return parsed array
+        return {
+            'searchType': searchType,
+            'searchTerms': returnVal
+        };
     }
     
      // perform actions when submit clicked
@@ -110,13 +170,13 @@ td{
             } else   {
                     // perform operation with form input
 
-                    // input all data trables
+                    // input all data tables
                     d3.csv("data/sets.csv").then(function(sets) {
-                        console.log('sets: ',sets);
+                        //console.log('sets: ',sets);
                         d3.csv("data/components.csv").then(function(components) {
-                            console.log('components: ',components);
+                            //console.log('components: ',components);
                                 d3.csv("data/relationship.csv").then(function(relationship) {
-                                    console.log('relationship: ',relationship);
+                                    //console.log('relationship: ',relationship);
 
                                     // In set array, change " c" track to " curved" and " s" track to " straight"
                                     for (let i = 0; i < sets.length; i++) {
@@ -124,48 +184,67 @@ td{
                                         sets[i].Track = sets[i].Track.replace(/ s/," straight");
                                     }
 
-                                    // Find all the years from the search box to search for
-                                    var searchSetArray = searchSetBox.value.split('-');
-                                    var searchYear = [];
-                                    searchYear[0] = searchSetArray[0];
-                                    console.log(searchSetArray.length, searchSetArray[0], searchSetArray[1]);
-                                    if (searchSetArray.length == 2) {
-                                        var yearPtr = 0;
-                                        for (let i = searchSetArray[0]; i<= searchSetArray[1]; i++) {
-                                            searchYear[yearPtr++] = i.toString();
-                                        }
-                                    };
-                                    console.log(searchSetBox.value);
+                                    // parse the search terms to determine what type of search to do
+                                    let searchVals = parseSearchBox(searchTerm.value);
+                                    // console.log("x", searchVals);
 
-                                // Create the output result table
-                                let resultTable =
-                                    `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
-                                let returnCount = 0
-                                var linePrinted = [];
-                                for (let i = 0; i < sets.length; i++) {
-                                    for (let j = 0; j < searchYear.length; j++) {
-                                        //console.log(i, j, sets[i].Year,searchYear[j])
-                                        if (sets[i].Year.includes(searchYear[j]))   {
-                                            if (!linePrinted.includes(i)) {
-                                                linePrinted.push(i);
-                                                returnCount++;
-                                                let componentList = makeComponentList(relationship, components, sets[i].Number);
-                                                resultTable += `<tr><td>${sets[i].Year}</td>` + 
-                                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
-                                                    `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
-                                                    `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                    // search sets by year
+                                    if (searchVals.searchType === "set") {
+
+                                        // Create the output result table
+                                        let resultTable =
+                                            `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
+                                        let returnCount = 0
+                                        var linePrinted = [];
+                                        for (let i = 0; i < sets.length; i++) {
+                                            for (let j = 0; j < searchVals.searchTerms.length; j++) {
+                                                if (sets[i].Year.includes(searchVals.searchTerms[j]))   {
+                                                    if (!linePrinted.includes(i)) {
+                                                        linePrinted.push(i);
+                                                        returnCount++;
+                                                        let componentList = makeComponentTable(relationship, components, sets[i].Number);
+                                                        resultTable += `<tr><td>${sets[i].Year}</td>` + 
+                                                            `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                                            `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                                            `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                                    }
+                                                }
                                             }
-                                        }
-                                    }
-                                }
-                                returnBody.innerHTML = "<table><tr><td>Number of Sets returned = " + returnCount + 
-                                    "</td></tr></table>";
-                                tableBody.innerHTML = resultTable;
-                                });
-                        });
-                    });
-             }
-    });
+                                        }   // end of looping through sets results
+                                        returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
+                                            "</b></td></tr></table>";
+                                        setBody.innerHTML = resultTable;
+                                    }  // end of search sets by year
+
+                                    // Search components by number or description
+                                    else {
+                                        let resultTable =
+                                            '<tr><td><b>Picture</b></td><td><b>Description</b></td>';
+                                        let returnCount = 0
+                                        for (let i = 0; i < components.length; i++) {
+                                            for (let j = 0; j < searchVals.searchTerms.length; j++) {
+                                                if ((components[i].Description.toLowerCase().includes(searchVals.searchTerms[j].toLowerCase())) || 
+                                                (components[i].Number.toLowerCase() == (searchVals.searchTerms[j].toLowerCase())))  {
+                                                    returnCount++;
+                                                    setList = makeSetTable(relationship, sets, components[i].Number);
+                                                    let image = '../images/' + components[i].Number + '_web.JPG';
+                                                    resultTable += `<tr><td><img src=` + image + ` alt="Image ''${image}'' not found."` +
+                                                        ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + 
+                                                        `</td><td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
+                                                        `<b>Gauge:</b> ${components[i].Gauge}<br><b>Sets containing this component:</b></br>${setList}</td></td></tr>`;
+                                                }
+                                            }
+                                        }   // end of looping through components results
+                                        returnBody.innerHTML = "<table><tr><td><b>Number of Components returned = " + returnCount + 
+                                            "</b></td></tr></table>";
+                                        compBody.innerHTML = resultTable;
+
+                                    }   // end of search components by number or description
+                                }); // end of d3.csv for data/relationship.csv
+                            }); // end of d3.csv for data/components.csv
+                        }); // end of d3.csv for data/sets.csv
+                    };  // end of else after searchTerm == "" check
+             });
 </script>
 </body>
 </html>
