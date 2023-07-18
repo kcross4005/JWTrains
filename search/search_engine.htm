@@ -188,7 +188,7 @@
                                 d3.csv("data/relationship.csv").then(function(relationship) {
                                     //console.log('relationship: ',relationship);
                                     d3.csv("data/articles.csv").then(function(articles) {
-                                    console.log('articles: ',articles);
+                                    // console.log('articles: ',articles);
 
                                         // In set array, change " c" track to " curved" and " s" track to " straight"
                                         for (let i = 0; i < sets.length; i++) {
@@ -201,7 +201,6 @@
                                             let temp = articles[i].Description.split(/\s+/);
                                             articles[i].Num = temp[0];
                                         }
-                                        console.log('articles: ',articles);
 
                                         // parse the search terms to determine what type of search to do
                                         let searchVals = parseSearchBox(searchTerm.value);
