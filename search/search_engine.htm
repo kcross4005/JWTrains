@@ -93,7 +93,7 @@
         let componentHTML = '';
         if (result.length != 0) {
             componentHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
-                `<tbody><tr><td><b>Component #</b></td><td><b>Description</b></td></tr>`;
+                `<tbody><tr><td><b>Component&nbsp#</b></td><td><b>Description</b></td></tr>`;
             for (let i=0; i < result.length; i++) {
                 let temp = components.find(obj => {
                     return obj.Number === result[i].ComponentNum
