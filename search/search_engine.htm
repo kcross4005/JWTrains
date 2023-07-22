@@ -87,6 +87,26 @@
         }
     }
 
+    // checks if the image at the specified URL exists or not
+    function imageExists(imageURL) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', imageURL, false);
+        http.send();
+
+        return http.status != 404;
+    }
+
+    // Creates a URL that points to an image if the image is present
+    function makeImgURL(image) {
+        let imageURL = `../images/${image}_web.JPG`;
+        if (imageExists(imageURL)) {
+            imageLink = `<a href="${imageURL}">${image}</a><br>`;
+        } else {
+            imageLink = `${image}<br>`;
+        }
+        return(imageLink);
+    }
+
     // For returned set data, create table containing the Number and Description of the components in the set
     function makeComponentTable(relationship, components, searchValue) {
         const result = relationship.filter(e => e.SetNum === searchValue);
@@ -102,7 +122,8 @@
                     componentHTML += `<tr><td>${result[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
                 }
                 else {
-                    componentHTML += `<tr><td>${temp.Number}</td><td>${temp.Description}</td></tr>`;
+                    imageURL = makeImgURL(temp.Number);
+                    componentHTML += `<tr><td>${imageURL}</td><td>${temp.Description}</td></tr>`;
                 }
             }
         } else {
@@ -157,6 +178,7 @@
         let searchType = "set";
         let returnVal = [];
 
+        // If the search term starts with 19, then is a year search for sets
         if (searchTerm.slice(0,2) === "19") {
         
             var searchArray = searchTerm.split('-');
@@ -216,7 +238,6 @@
 
                                         // parse the search terms to determine what type of search to do
                                         let searchVals = parseSearchBox(searchTerm.value);
-                                        // console.log("x", searchVals);
 
                                         // search sets by year
                                         if (searchVals.searchType === "set") {
