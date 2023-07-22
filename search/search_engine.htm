@@ -112,6 +112,18 @@
         return(componentHTML);
     }
 
+    // Function to return article info for the component if it exists
+    function makeArticleLine(articles, componentNum) {
+        let articleLine = "";
+        const result = articles.filter(e => e.Num === componentNum);
+        console.log('aaa',componentNum, result);
+        if (result.length > 0) {
+            articleLine = `<br><b>Repair Article: <br>&nbsp;&nbsp;&nbspCategory:&nbsp</b>${result[0].Category}<br>` + 
+                `<b>&nbsp;&nbsp;&nbspDescription:&nbsp</b>${result[0].Description}`;
+        }
+        return(articleLine); 
+    }
+
     // For returned component data, create table containing the Number and Year of the sets containing the comonents
     function makeSetTable(relationship, sets, searchValue) {
         const result = relationship.filter(e => e.ComponentNum === searchValue);
@@ -246,12 +258,13 @@
                                                     if ((components[i].Description.toLowerCase().includes(searchVals.searchTerms[j].toLowerCase())) || 
                                                     (components[i].Number.toLowerCase() == (searchVals.searchTerms[j].toLowerCase())))  {
                                                         returnCount++;
+                                                        articleLine = makeArticleLine(articles, components[i].Number);
                                                         setList = makeSetTable(relationship, sets, components[i].Number);
                                                         let image = '../images/' + components[i].Number + '_web.JPG';
                                                         resultTable += `<tr><td><img src=` + image + ` alt="Image ''${image}'' not found."` +
                                                             ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" /></td>` + 
                                                             `<td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
-                                                            `<b>Gauge:</b> ${components[i].Gauge}<br><b>Sets containing this component:</b><br>${setList}</td></tr>`;
+                                                            `<b>Gauge:</b> ${components[i].Gauge}${articleLine}<br><b>Sets containing this component:</b><br>${setList}</td></tr>`;
                                                     }
                                                 }
                                             }   // end of looping through components results
