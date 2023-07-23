@@ -41,7 +41,7 @@
             <td height="131"><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
             <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font><br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td></tr>
-    <tr><td><p>Enter set year (e.g., 1956 or 1960-1965) or component number/description (e.g., 44 or locomotive or diesel, car)</d></tr>
+    <tr><td><p>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</p></tr>
     <tr><td>
             <form action="" id="searchSets">
             <input type="text" id="searchSetBox">
@@ -172,7 +172,7 @@
     }   
 
     // parse search box and rturn search terms
-    function parseSearchBox(searchTerm) {
+    function parseSearchBox(searchTerm, sets) {
 
         // Parse set input search terms
         let searchType = "set";
@@ -190,8 +190,14 @@
                 }
             }
 
+        // If the user entrered a number, determine if it is a set or component number
+        } else if (sets.filter(obj => {
+            return obj.Number === searchTerm}).length > 0)   {
+            searchType = "setNum";
+            returnVal = searchTerm;
+        
+        // Otherwise, assune a component search by num or description
         } else {
-            // process component search by description
             searchType = "component";
             returnVal = searchTerm.split(',');
         }
@@ -237,7 +243,8 @@
                                         }
 
                                         // parse the search terms to determine what type of search to do
-                                        let searchVals = parseSearchBox(searchTerm.value);
+                                        let searchVals = parseSearchBox(searchTerm.value, sets);
+                                        //console.log('zzz', searchVals);
 
                                         // search sets by year
                                         if (searchVals.searchType === "set") {
@@ -265,10 +272,35 @@
                                             returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
                                                 "</b></td></tr></table>";
                                             setBody.innerHTML = resultTable;
-                                        }  // end of search sets by year
+
+                                        // Search by set number
+                                        }  else if (searchVals.searchType === "setNum") {
+                                            console.log('cc:',searchVals);
+
+                                            let resultTable =
+                                                `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
+                                            let returnCount = 0
+                                            var linePrinted = [];
+                                            for (let i = 0; i < sets.length; i++) {
+                                                if (sets[i].Number.includes(searchVals.searchTerms[0]))   {
+                                                    console.log('///', sets[i].Number, searchVals.searchTerms[0]);
+                                                    returnCount++;
+                                                    let componentList = makeComponentTable(relationship, components, sets[i].Number);
+                                                    //let componentList = 'Hi again!';
+                                                    resultTable += `<tr><td>${sets[i].Year}</td>` + 
+                                                        `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
+                                                        `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
+                                                        `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                                }
+                                                break;
+                                            }   // end of looping through sets results
+
+                                            returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
+                                            "</b></td></tr></table>";
+                                            setBody.innerHTML = resultTable;
 
                                         // Search components by number or description
-                                        else {
+                                        } else {
 
                                             // Create the output result table
                                             let resultTable =
