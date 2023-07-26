@@ -137,7 +137,7 @@
     function makeArticleLine(articles, componentNum) {
         let articleLine = "";
         const result = articles.filter(e => e.Num === componentNum);
-        console.log('aaa',componentNum, result);
+        //console.log('article',componentNum, result);
         if (result.length > 0) {
             articleLine = `<br><b>Repair Article: <br>&nbsp;&nbsp;&nbspCategory:&nbsp</b>${result[0].Category}<br>` + 
                 `<b>&nbsp;&nbsp;&nbspDescription:&nbsp</b>${result[0].Description}`;
@@ -171,14 +171,14 @@
 
     }   
 
-    // parse search box and rturn search terms
-    function parseSearchBox(searchTerm, sets) {
+    // parse search box and return search terms
+    function parseSearchBox(searchTerm, sets, components) {
 
         // Parse set input search terms
         let searchType = "set";
         let returnVal = [];
 
-        // If the search term starts with 19, then is a year search for sets
+        // "set" - If the search term starts with 19, then is a year search for sets
         if (searchTerm.slice(0,2) === "19") {
         
             var searchArray = searchTerm.split('-');
@@ -190,13 +190,17 @@
                 }
             }
 
-        // If the user entrered a number, determine if it is a set or component number
-        } else if (sets.filter(obj => {
-            return obj.Number === searchTerm}).length > 0)   {
-            searchType = "setNum";
-            returnVal = searchTerm;
+         // "setNum" - If the user entrered a number, determine if it is a set or component number
+        } else if ((sets.filter(obj => {return obj.Number === searchTerm}).length > 0)  &&
+                (components.filter(obj => {return obj.Number === searchTerm}).length > 0)) {
+                console.log("BOTH");
         
-        // Otherwise, assune a component search by num or description
+        // "setNum" - If the user entrered a number, determine if it is a set or component number
+        } else if (sets.filter(obj => {return obj.Number === searchTerm}).length > 0)   {
+                searchType = "setNum";
+                returnVal = searchTerm;
+        
+        // "component" - Otherwise, assume a component search by num or description
         } else {
             searchType = "component";
             returnVal = searchTerm.split(',');
@@ -222,7 +226,7 @@
 
                     // input all data tables
                     d3.csv("data/sets.csv").then(function(sets) {
-                        // console.log('sets: ',sets);
+                        console.log('sets: ',sets);
                         d3.csv("data/components.csv").then(function(components) {
                             //console.log('components: ',components);
                                 d3.csv("data/relationship.csv").then(function(relationship) {
@@ -243,11 +247,12 @@
                                         }
 
                                         // parse the search terms to determine what type of search to do
-                                        let searchVals = parseSearchBox(searchTerm.value, sets);
-                                        //console.log('zzz', searchVals);
+                                        let searchVals = parseSearchBox(searchTerm.value, sets, components);
+                                        console.log('zzz', searchVals);
 
                                         // search sets by year
                                         if (searchVals.searchType === "set") {
+                                            console.log('set:',searchVals);
 
                                             // Create the output result table
                                             let resultTable =
@@ -275,24 +280,25 @@
 
                                         // Search by set number
                                         }  else if (searchVals.searchType === "setNum") {
-                                            console.log('cc:',searchVals);
+                                            //console.log('setNum:',searchVals, searchVals.searchTerms);
 
                                             let resultTable =
                                                 `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
                                             let returnCount = 0
                                             var linePrinted = [];
                                             for (let i = 0; i < sets.length; i++) {
-                                                if (sets[i].Number.includes(searchVals.searchTerms[0]))   {
-                                                    console.log('///', sets[i].Number, searchVals.searchTerms[0]);
+                                                //console.log(sets[i].Number, searchVals.earchTerms)
+                                                if (sets[i].Number.includes(searchVals.searchTerms))   {
+                                                    console.log('///', sets[i].Number, searchVals.searchTerms);
                                                     returnCount++;
                                                     let componentList = makeComponentTable(relationship, components, sets[i].Number);
-                                                    //let componentList = 'Hi again!';
                                                     resultTable += `<tr><td>${sets[i].Year}</td>` + 
                                                         `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
                                                         `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
                                                         `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                                    break;
                                                 }
-                                                break;
+
                                             }   // end of looping through sets results
 
                                             returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
@@ -301,6 +307,7 @@
 
                                         // Search components by number or description
                                         } else {
+                                            //console.log("Components",searchVals);
 
                                             // Create the output result table
                                             let resultTable =
@@ -308,8 +315,10 @@
                                             let returnCount = 0
                                             for (let i = 0; i < components.length; i++) {
                                                 for (let j = 0; j < searchVals.searchTerms.length; j++) {
+                                                    //console.log(i,j);
                                                     if ((components[i].Description.toLowerCase().includes(searchVals.searchTerms[j].toLowerCase())) || 
                                                     (components[i].Number.toLowerCase() == (searchVals.searchTerms[j].toLowerCase())))  {
+                                                        //console.log(i,') ', components[i].Number.toLowerCase(), searchVals.searchTerms[j].toLowerCase())
                                                         returnCount++;
                                                         articleLine = makeArticleLine(articles, components[i].Number);
                                                         setList = makeSetTable(relationship, sets, components[i].Number);
@@ -318,6 +327,7 @@
                                                             ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" /></td>` + 
                                                             `<td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
                                                             `<b>Gauge:</b> ${components[i].Gauge}${articleLine}<br><b>Sets containing this component:</b><br>${setList}</td></tr>`;
+                                                            break;
                                                     }
                                                 }
                                             }   // end of looping through components results
