@@ -194,6 +194,8 @@
         } else if ((sets.filter(obj => {return obj.Number === searchTerm}).length > 0)  &&
                 (components.filter(obj => {return obj.Number === searchTerm}).length > 0)) {
                 console.log("BOTH");
+                searchType = "setNum";
+                returnVal = searchTerm;
         
         // "setNum" - If the user entrered a number, determine if it is a set or component number
         } else if (sets.filter(obj => {return obj.Number === searchTerm}).length > 0)   {
