@@ -36,12 +36,12 @@
 <body>
 
     <!-- Page Header, search box -->
-    <table style="border-collapse: collapse" width="100%" height="131" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
+    <table style="border-collapse: collapse" width="100%" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
         <tbody><tr>
-            <td height="131"><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
-            <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font><br></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
+            <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font>
     <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td></tr>
-    <tr><td><p>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</p></tr>
+    <tr><td>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</td></tr>
     <tr><td>
             <form action="" id="searchSets">
             <input type="text" id="searchSetBox">
@@ -139,7 +139,7 @@
         const result = articles.filter(e => e.Num === componentNum);
         //console.log('article',componentNum, result);
         if (result.length > 0) {
-            articleLine = `<br><b>Repair Article: <br>&nbsp;&nbsp;&nbspCategory:&nbsp</b>${result[0].Category}<br>` + 
+            articleLine = `<br><b>Repair Article by JWTrains: <br>&nbsp;&nbsp;&nbspCategory:&nbsp</b>${result[0].Category}<br>` + 
                 `<b>&nbsp;&nbsp;&nbspDescription:&nbsp</b>${result[0].Description}`;
         }
         return(articleLine); 
@@ -319,7 +319,7 @@
                                                 for (let j = 0; j < searchVals.searchTerms.length; j++) {
                                                     //console.log(i,j);
                                                     if ((components[i].Description.toLowerCase().includes(searchVals.searchTerms[j].toLowerCase())) || 
-                                                    (components[i].Number.toLowerCase() == (searchVals.searchTerms[j].toLowerCase())))  {
+                                                    (components[i].Number.toLowerCase().match(`^${searchVals.searchTerms[j].toLowerCase()}:*`)))  {
                                                         //console.log(i,') ', components[i].Number.toLowerCase(), searchVals.searchTerms[j].toLowerCase())
                                                         returnCount++;
                                                         articleLine = makeArticleLine(articles, components[i].Number);
