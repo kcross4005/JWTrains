@@ -14,6 +14,9 @@
     <title>Model Train Search Engine</title>  
 </head>
 <style>
+     * {
+        box-sizing: border-box;
+      }
     p {
         font-size: 16pt;
     }
@@ -32,23 +35,84 @@
         border: 1px solid black;
         border-collapse: collapse;
     }
+    .windowPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+    .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+     }
+     .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      /* .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      } */
+      /* .formContainer .cancel {
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      } */
 </style>
 <body>
 
     <!-- Page Header, search box -->
     <table style="border-collapse: collapse" width="100%" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
         <tbody><tr>
-            <td><font face="Arial"><font size="5">&nbsp;&nbsp;&nbsp; JWTRAINS.com </font>
-            <font style="font-size: 14pt">&nbsp;The <font color="#FF6600">Lionel</font> electric train search engine</font>
-    <img src="../banner.JPG" alt="JWTRAINS.COM  Repair Lionel Trains" width=100% height=auto border="0"></td></tr>
+            <td><center><font face="Arial"><font size="5">JWTRAINS.com - </font>
+            <font style="font-size: 14pt">The <font color="#FF6600">Lionel</font> train search engine</font></font></center>
+    <img src="../banner.JPG" alt="JWTRAINS.COM Repair Lionel Trains" width=90% height=auto border="0"></td></tr>
     <tr><td>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</td></tr>
     <tr><td>
             <form action="" id="searchSets">
             <input type="text" id="searchSetBox">
             <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
             </form>
-        </td></tr>
+        </td>
+    </tr>
     </tbody></table>
+
+    <!-- Div to hold the popup box -->
+    <div class="windowPopup">
+        <div class="formPopup" id="popupForm">
+          <form class="formContainer">
+            <h2 id="popupMsg"></h2>
+            <img id="popupImg" width="100%" height="auto" border="1">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
 
     <!-- table to hold # items returned -->
     <table id="returnCount" border="1" width="100%">
@@ -75,6 +139,31 @@
     </tbody></table>
 
 <script>
+    // Opens popup window
+    function openForm(type, msg) {
+        console.log(type, msg);
+
+        // popup showing just a message
+        if (type == 1) {
+            document.getElementById("popupMsg").innerHTML = msg;
+            document.getElementById("popupImg").style.display='none';
+        
+        // popup showing just an image
+        } else if (type == 2) {
+            document.getElementById("popupMsg").innerHTML = "";
+            document.getElementById("popupImg").src=msg;
+            document.getElementById("popupImg").style.display='block';
+        }
+        
+        // Show the popup
+        document.getElementById("popupForm").style.display = "block";
+    }
+
+    // Closes popup window
+    function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+
     // clear previous search results
     function replaceTable() {
         
@@ -100,7 +189,7 @@
     function makeImgURL(image) {
         let imageURL = `../images/${image}_web.JPG`;
         if (imageExists(imageURL)) {
-            imageLink = `<a href="${imageURL}">${image}</a><br>`;
+            imageLink = `<a href="#" onclick=openForm(2,"${imageURL}"); return false;">${image}</a><br>`;
         } else {
             imageLink = `${image}<br>`;
         }
@@ -193,7 +282,7 @@
          // "setNum" - If the user entrered a number, determine if it is a set or component number
         } else if ((sets.filter(obj => {return obj.Number === searchTerm}).length > 0)  &&
                 (components.filter(obj => {return obj.Number === searchTerm}).length > 0)) {
-                console.log("BOTH");
+                openForm(1, `${searchTerm} is both a set and component number. Which should I search for?`);
                 searchType = "setNum";
                 returnVal = searchTerm;
         
@@ -222,7 +311,8 @@
         let searchTerm = document.getElementById("searchSetBox");
 
         if (searchTerm.value == "" ) {
-            alert("Please enter a search value!");
+            openForm(1, "Please enter something to search for.");
+            //alert("Please enter a search value!");
             } else   {
                     // perform operation with form input
 
@@ -250,7 +340,7 @@
 
                                         // parse the search terms to determine what type of search to do
                                         let searchVals = parseSearchBox(searchTerm.value, sets, components);
-                                        console.log('zzz', searchVals);
+                                        //console.log('zzz', searchVals);
 
                                         // search sets by year
                                         if (searchVals.searchType === "set") {
@@ -279,6 +369,9 @@
                                             returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
                                                 "</b></td></tr></table>";
                                             setBody.innerHTML = resultTable;
+                                            if (returnCount == 0) {
+                                                openForm(1, "Search returned no Sets.");
+                                            }
 
                                         // Search by set number
                                         }  else if (searchVals.searchType === "setNum") {
@@ -306,6 +399,10 @@
                                             returnBody.innerHTML = "<table><tr><td><b>Number of Sets returned = " + returnCount + 
                                             "</b></td></tr></table>";
                                             setBody.innerHTML = resultTable;
+                                            if (returnCount == 0) {
+                                                openForm(1, "Search returned no Sets.");
+                                            }
+
 
                                         // Search components by number or description
                                         } else {
@@ -336,6 +433,9 @@
                                             returnBody.innerHTML = "<table><tr><td><b>Number of Components returned = " + returnCount + 
                                                 "</b></td></tr></table>";
                                             compBody.innerHTML = resultTable;
+                                            if (returnCount == 0) {
+                                                openForm(1, "Search returned no Components.");
+                                            }
 
                                         }   // end of search components by number or description
                                     }); // end of d3.csv for data/articles.csv
