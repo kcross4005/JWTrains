@@ -6,16 +6,5 @@ Thumbs.db
 search/working/
 
 images/Thumbs.db
-playground/alertify.min.js
-playground/d3.v7.min.js
-playground/imagePopup.htm
-playground/modal.htm
-playground/modal2.htm
-playground/modal3.htm
-playground/parent.htm
-playground/Victor-Eke.jpg
-playground/javascript-messages-master/.gitignore
-playground/javascript-messages-master/index.html
-playground/javascript-messages-master/index.js
-playground/javascript-messages-master/javascript-messages-master.zip
-playground/javascript-messages-master/sub.html
+playground/**
+
