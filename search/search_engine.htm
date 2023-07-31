@@ -146,13 +146,23 @@
         }
     }
 
-    // checks if the image at the specified URL exists or not
+    // checks if the image at the specified URL exists in the image folder or not
     function imageExists(imageURL) {
-        var http = new XMLHttpRequest();
-        http.open('HEAD', imageURL, false);
-        http.send();
+        folderImg = imageList.find(img => img.name === imageURL);   // see if already check this image
 
-        return http.status != 404;
+        // if not, check folder for image and put name/status into image list
+        if (folderImg == null) {
+            var http = new XMLHttpRequest();
+            http.open('HEAD', imageURL, false);
+            http.send();
+            imageStatus = http.status;
+            const imgObj = { name: imageURL, imgStat: imageStatus};
+            imageList.push(imgObj);
+        // otherwise return status from image list
+        } else {
+            imageStatus = folderImg.imgStat;
+        }
+        return imageStatus != 404;
     }
 
     // Creates a URL that points to an image if the image is present
@@ -276,6 +286,7 @@
     }
     
      // perform actions when submit clicked
+     var imageList = [];    // array to store if image exists in img folder or not
      let searchForm = document.getElementById("searchSets");
      searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
