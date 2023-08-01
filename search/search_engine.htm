@@ -67,7 +67,7 @@
     <tr><td>
             <form action="" id="searchSets">
             <input type="text" id="searchSetBox">
-            <button type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+            <button id="searchBtn" type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
             </form>
         </td>
     </tr>
@@ -79,7 +79,7 @@
           <form class="formContainer">
             <p id="popupMsg"></p>
             <img id="popupImg" width="100%" height="auto" border="1">
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            <button id="popupBtn" type="button" class="btn cancel" onclick="closePopup()">Close</button>
           </form>
         </div>
       </div>
@@ -127,10 +127,12 @@
         
         // Show the popup
         document.getElementById("popupForm").style.display = "block";
+        document.getElementById("popupBtn").focus();       // give focus to the popup close button
     }
 
     // Closes popup window
-    function closeForm() {
+    function closePopup() {
+        document.getElementById("searchBtn").focus();    // return focus to the search button
         document.getElementById("popupForm").style.display = "none";
       }
 
@@ -243,13 +245,12 @@
     // parse search box and return search terms
     function parseSearchBox(searchTerm, sets, components) {
 
-        // Parse set input search terms
+        // Parse input search terms. Default search type to "set"
         let searchType = "set";
         let returnVal = [];
 
-        // "set" - If the search term starts with 19, then is a year search for sets
+        // "set" - If the search term starts with 19, then is a search for sets by year
         if (searchTerm.slice(0,2) === "19") {
-        
             var searchArray = searchTerm.split('-');
             returnVal[0] = searchArray[0];
             if (searchArray.length == 2) {
@@ -259,16 +260,16 @@
                 }
             }
 
-         // If the user's number is not a set and component number, tell user and set to component
-        } else if ((sets.filter(obj => {return obj.Number === searchTerm}).length > 0)  &&
-                (components.filter(obj => {return obj.Number === searchTerm}).length > 0)) {
-                let set = sets.filter(obj => {return obj.Number === searchTerm});
-                popUp(1, `Note: ${searchTerm} is also a Set from the year ${set[0].Year}.`);
+         // If the user's number is both a set and component number, tell user and set to component
+        } else if ((sets.filter(obj => {return obj.Number.toLowerCase() === searchTerm.toLowerCase()}).length > 0)  &&
+                (components.filter(obj => {return obj.Number.toLowerCase() === searchTerm.toLowerCase()}).length > 0)) {
+                let dupeSet = sets.filter(obj => {return obj.Number === searchTerm});
+                popUp(1, `Note: ${searchTerm} is also a Set from the year ${dupeSet[0].Year}.`);
                 searchType = "component";
                 returnVal = searchTerm.split(',');
         
         // "setNum" - If the user entered a number, determine if it is a set or component number
-        } else if (sets.filter(obj => {return obj.Number === searchTerm}).length > 0)   {
+        } else if (sets.filter(obj => {return obj.Number.toLowerCase() === searchTerm.toLowerCase()}).length > 0)   {
                 searchType = "setNum";
                 returnVal = searchTerm;
         
@@ -287,6 +288,7 @@
     
      // perform actions when submit clicked
      var imageList = [];    // array to store if image exists in img folder or not
+     //document.getElementById("searchBox").focus();    // return focus to the search button
      let searchForm = document.getElementById("searchSets");
      searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -319,11 +321,11 @@
                                     articles[i].Num = temp[0];
                                 }
 
-                                // parse the search terms to determine what type of search to do
+                                // parse the search terms to determine search type and what to search for
                                 let searchVals = parseSearchBox(searchTerm.value, sets, components);
                                 //console.log('searchVals', searchVals);
 
-                                // search sets by year
+                                // "set": search sets by year
                                 if (searchVals.searchType === "set") {
                                     //console.log('set:',searchVals);
 
@@ -334,7 +336,7 @@
                                     var linePrinted = [];
                                     for (let i = 0; i < sets.length; i++) {
                                         for (let j = 0; j < searchVals.searchTerms.length; j++) {
-                                            if (sets[i].Year.includes(searchVals.searchTerms[j]))   {
+                                            if (sets[i].Year.toLowerCase().includes(searchVals.searchTerms[j].toLowerCase()))   {
                                                 if (!linePrinted.includes(i)) {
                                                     linePrinted.push(i);
                                                     returnCount++;
@@ -354,7 +356,7 @@
                                         popUp(1, "Search returned no Sets.");
                                     }
 
-                                // Search sets by number
+                                // "setNum": Search sets by number
                                 }  else if (searchVals.searchType === "setNum") {
                                     //console.log('setNum:',searchVals, searchVals.searchTerms);
 
@@ -364,7 +366,7 @@
                                     var linePrinted = [];
                                     for (let i = 0; i < sets.length; i++) {
                                         //console.log(sets[i].Number, searchVals.earchTerms)
-                                        if (sets[i].Number.includes(searchVals.searchTerms))   {
+                                        if (sets[i].Number.toLowerCase().includes(searchVals.searchTerms.toLowerCase()))   {
                                             returnCount++;
                                             let componentList = makeComponentTable(relationship, components, sets[i].Number);
                                             resultTable += `<tr><td>${sets[i].Year}</td>` + 
@@ -383,7 +385,7 @@
                                         popUp(1, "Search returned no Sets.");
                                     }
 
-                                // Search components by number or description
+                                // "component": Search components by number or description
                                 } else {
                                     //console.log("Components",searchVals);
 
