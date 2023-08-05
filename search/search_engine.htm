@@ -63,10 +63,17 @@
             <td><center><font face="Arial"><font size="5">JWTRAINS.com - </font>
             <font style="font-size: 14pt">The <font color="#FF6600">Lionel</font> train search engine</font></font></center>
     <img src="../banner.JPG" alt="JWTRAINS.COM Repair Lionel Trains" width=90% height=auto border="0"></td></tr>
-    <tr><td>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</td></tr>
+    <!-- <tr><td>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</td></tr> -->
     <tr><td>
-            <form action="" id="searchSets">
-            <input type="text" id="searchSetBox">
+            <form id="searchSets" action="">
+            <input id="searchSetBox" type="text">
+            <!-- <select id="searchType">
+                <option value="Number">Search by Set or Component number</option>
+                <option value="Year">Search by Set year(s) (e.g., 1956 or 1957-1964)</option>
+                <option value="Component">Search by Component Description</option>
+            </select> -->
+                
+            </select>
             <button id="searchBtn" type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
             </form>
         </td>
@@ -101,9 +108,8 @@
     <!-- table to hold returned sets -->
     <table id="mySets" border="1" width="100%">
         <colgroup>
-            <col span="1" style="width: 10%;">
-            <col span="1" style="width: 30%;">
-            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
         </colgroup>
         <tbody id="setBody">
     </tbody></table>
@@ -149,8 +155,8 @@
     }
 
     // checks if the image at the specified URL exists in the image folder or not
-    function imageExists(imageURL) {
-        folderImg = imageList.find(img => img.name === imageURL);   // see if already check this image
+   function imageExists(imageURL) {
+        folderImg = imageList.find(img => img.name === imageURL);   // see if already checked this image
 
         // if not, check folder for image and put name/status into image list
         if (folderImg == null) {
@@ -216,22 +222,22 @@
         return(articleLine); 
     }
 
-    // For returned component data, create table containing the Number and Year of the sets containing the comonents
+    // For returned component data, create table containing the data of all the sets containing the comonents
     function makeSetTable(relationship, sets, searchValue) {
         const result = relationship.filter(e => e.ComponentNum === searchValue);
         let setHTML = '';
         if (result.length != 0) {
             setHTML = `<table>` + 
-                `<tr><td "width: 20%;"><b>Set #</b></td><td><b>Year</b></td></tr>`;
+                `<tr><td><b>Set #</b></td><td><b>Year</b></td><td><b>Gauge</b></td><td><b>Description</b></td><td><b>Track</b></td><td><b>Transformer</b></td></tr>`;
             for (let i=0; i < result.length; i++) {
-                let temp = sets.find(obj => {
+                let set = sets.find(obj => {
                     return obj.Number === result[i].SetNum
                 })
-                if (typeof temp === 'undefined') {
+                if (typeof set === 'undefined') {
                     setHTML += `<tr><td>${result[i].ComponentNum}<b> Description: </b><font color="red">Not present in component data</font></tr>`;
                 }
                 else {
-                    setHTML += `<tr><td>${temp.Number}</td><td>${temp.Year}</td></tr>`;
+                    setHTML += `<tr><td>${set.Number}</td><td>${set.Year}</td><td>${set.Gauge}</td><td>${set.Description}</td><td>${set.Track}</td><td>${set.Transformer}</td></tr>`;
                 }
             }
             setHTML += '</table>';
@@ -293,6 +299,8 @@
      searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let searchTerm = document.getElementById("searchSetBox");
+        let searchType = document.getElementById("searchType");
+        //console.log(searchTerm.value, searchType.value);
 
         if (searchTerm.value == "" ) {
             popUp(1, "Please enter something to search for.");
@@ -323,15 +331,15 @@
 
                                 // parse the search terms to determine search type and what to search for
                                 let searchVals = parseSearchBox(searchTerm.value, sets, components);
-                                //console.log('searchVals', searchVals);
+                                console.log('searchVals', searchVals);
 
                                 // "set": search sets by year
                                 if (searchVals.searchType === "set") {
-                                    //console.log('set:',searchVals);
+                                    console.log('set:',searchVals);
 
                                     // Create the output result table
                                     let resultTable =
-                                        `<tr><td><b>Year</b></td><td><b>Set</b></td><td><b>Components</b></td></tr>`;
+                                        `<tr><td><b>Set</b></td><td><b>Components</b></td></tr>`;
                                     let returnCount = 0
                                     var linePrinted = [];
                                     for (let i = 0; i < sets.length; i++) {
@@ -340,11 +348,13 @@
                                                 if (!linePrinted.includes(i)) {
                                                     linePrinted.push(i);
                                                     returnCount++;
+                                                    console.log('fred');
                                                     let componentList = makeComponentTable(relationship, components, sets[i].Number);
-                                                    resultTable += `<tr><td>${sets[i].Year}</td>` + 
-                                                        `<td><b>Number: </b>${sets[i].Number}<br><b>Gauge: </b>${sets[i].Gauge}<br>` + 
-                                                        `<b>Description: </b>${sets[i].Description}<br><b>Track: </b>${sets[i].Track}<br>` +
-                                                        `<b>Transformer: </b>${sets[i].Transformer}</td><td>${componentList}</td></tr>`;
+                                                    resultTable += 
+                                                        `<tr><td><b>Number: </b>${sets[i].Number}<br><b>Year:</b>${sets[i].Year}<br>` + 
+                                                        `<b>Gauge: </b>${sets[i].Gauge}<br><b>Description: </b>${sets[i].Description}<br>` + 
+                                                        `<b>Track: </b>${sets[i].Track}<br><b>Transformer: </b>${sets[i].Transformer}</td>` +
+                                                        `<td>${componentList}</td></tr>`;
                                                 }
                                             }
                                         }
