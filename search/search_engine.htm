@@ -400,7 +400,7 @@
                                         // Loop through sets looking for sets with the given number
                                         for (let i = 0; i < sets.length; i++) {
                                             //console.log(sets[i].Number, searchTerm.value)
-                                            if (sets[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}:*`))   {
+                                            if (sets[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}$`))   {
                                                 // Add Set header only once
                                                 if (printHeader === 0) {
                                                     resultTable += `<tr><td><b>Set</b></td><td><b>Components</b></td></tr>`;
@@ -420,7 +420,7 @@
                                         // Loop through components looking for components with the given number
                                         printHeader = 0;
                                         for (let i = 0; i < components.length; i++) {
-                                                if (components[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}:*`))  {
+                                                if (components[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}$`))  {
                                                     // Add component header only once
                                                     if (printHeader === 0) {
                                                         resultTable += `<tr><td><b>Picture</b></td><td><b>Description</b></td></tr>`;
