@@ -397,26 +397,6 @@
                                         var linePrinted = [];
                                         let printHeader = 0;    
 
-                                        // Loop through sets looking for sets with the given number
-                                        for (let i = 0; i < sets.length; i++) {
-                                            //console.log(sets[i].Number, searchTerm.value)
-                                            if (sets[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}$`))   {
-                                                // Add Set header only once
-                                                if (printHeader === 0) {
-                                                    resultTable += `<tr><td><b>Set</b></td><td><b>Components</b></td></tr>`;
-                                                    printHeader = 1;
-                                                }
-                                                returnCount++;
-                                                let componentList = makeComponentTable(relationship, components, sets[i].Number);
-                                                resultTable +=  
-                                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Year: </b>${sets[i].Year}<br>` + 
-                                                    `<b>Gauge: </b>${sets[i].Gauge}<br><b>Description: </b>${sets[i].Description}<br>` +
-                                                    `<b>Track: </b>${sets[i].Track}<br><b>Transformer: </b>${sets[i].Transformer}</td>` +
-                                                    `<td>${componentList}</td></tr>`;
-                                                //break;
-                                            }
-                                        }   // end of looping through sets results
-
                                         // Loop through components looking for components with the given number
                                         printHeader = 0;
                                         for (let i = 0; i < components.length; i++) {
@@ -436,6 +416,27 @@
                                                         `<b>Gauge:</b> ${components[i].Gauge}${articleLine}<br><b>Sets containing this component:</b><br>${setList}</td></tr>`;
                                                 }
                                         }   // end of looping through components results
+
+                                        // Loop through sets looking for sets with the given number
+                                        printHeader = 0;
+                                        for (let i = 0; i < sets.length; i++) {
+                                            //console.log(sets[i].Number, searchTerm.value)
+                                            if (sets[i].Number.toLowerCase().match(`^${searchTerm.value.toLowerCase()}$`))   {
+                                                // Add Set header only once
+                                                if (printHeader === 0) {
+                                                    resultTable += `<tr><td><b>Set</b></td><td><b>Components</b></td></tr>`;
+                                                    printHeader = 1;
+                                                }
+                                                returnCount++;
+                                                let componentList = makeComponentTable(relationship, components, sets[i].Number);
+                                                resultTable +=  
+                                                    `<td><b>Number: </b>${sets[i].Number}<br><b>Year: </b>${sets[i].Year}<br>` + 
+                                                    `<b>Gauge: </b>${sets[i].Gauge}<br><b>Description: </b>${sets[i].Description}<br>` +
+                                                    `<b>Track: </b>${sets[i].Track}<br><b>Transformer: </b>${sets[i].Transformer}</td>` +
+                                                    `<td>${componentList}</td></tr>`;
+                                                //break;
+                                            }
+                                        }   // end of looping through sets results
 
                                         returnBody.innerHTML = "<table><tr><td><b>Number of Items returned = " + returnCount + 
                                         "</b></td></tr></table>";
