@@ -297,11 +297,11 @@
                             d3.csv("../data/articles.csv").then(function(articles) {
                             //console.log('articles: ',articles);
                                 d3.csv("../data/images.csv").then(function(images) {
-                                //console.log('images: ',images);
+                                console.log('images: ',images);
 
                                     // copy images array into imageList array
                                     for (let i = 0; i < images.length; i++) {
-                                        let imageURL = `../images/${images[i].Images}`;
+                                        let imageURL = `../images/${images[i].Name}`;
                                         const imgObj = { name: imageURL, imgStat: 200};
                                         imageList.push(imgObj);
                                     }
@@ -396,8 +396,8 @@
                                                         returnCount++;
                                                         articleLine = makeArticleLine(articles, components[i].Number);
                                                         setList = makeSetTable(relationship, sets, components[i].Number);
-                                                        let image = '../images/' + components[i].Number + '_web.JPG';
-                                                        resultTable += `<tr><td><img src=` + image + ` alt="Image ''${image}'' not found."` +
+                                                        let imageURL = '../images/' + components[i].Number + '_web.JPG';
+                                                        resultTable += `<tr><td><img src=` + imageURL + ` alt="Image ''${imageURL}'' not found."` +
                                                             ` onerror="this.onerror=null;this.src='../images/noImage.jpg';" />` + `</td>` + 
                                                             `<td><b>Number:</b> ${components[i].Number}<br><b>Description:</b> ${components[i].Description}<br>` + 
                                                             `<b>Gauge:</b> ${components[i].Gauge}${articleLine}<br><b>Sets containing this component:</b><br>${setList}</td></tr>`;
