@@ -168,21 +168,20 @@
 
     // For returned set data, create table containing the Number and Description of the components in the set
     function makeComponentTable(relationship, components, searchValue) {
-        const result = relationship.filter(e => e.SetNum === searchValue);
+        const setComponents = relationship.filter(e => e.SetNum === searchValue);
         let componentHTML = '';
-        if (result.length != 0) {
+        if (setComponents.length != 0) {
             componentHTML = `<table><colgroup><col span="1" style="width: 10%"><col span="1" style="width: 90%"></colgroup>` + 
                 `<tbody><tr><td><b>Component&nbsp#</b></td><td><b>Description</b></td></tr>`;
-            for (let i=0; i < result.length; i++) {
-                let temp = components.find(obj => {
-                    return obj.Number === result[i].ComponentNum
+            for (let i=0; i < setComponents.length; i++) {
+                let oneComponent = components.find(obj => {
+                    return obj.Number === setComponents[i].ComponentNum
                 })
-                if (typeof temp === 'undefined') {
-                    componentHTML += `<tr><td>${result[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
-                }
-                else {
-                    imageURL = makeImgURL(temp.Number);
-                    componentHTML += `<tr><td>${imageURL}</td><td>${temp.Description}</td></tr>`;
+                if (typeof oneComponent === 'undefined') {
+                    componentHTML += `<tr><td>${setComponents[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
+                } else {
+                    imageURL = makeImgURL(oneComponent.Number);
+                    componentHTML += `<tr><td>${imageURL}</td><td>${oneComponent.Description}</td></tr>`;
                 }
             }
         } else {
