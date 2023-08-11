@@ -288,15 +288,15 @@
                 // perform operation with form input
 
                 // input all data tables
-                d3.csv("data/sets.csv").then(function(sets) {
+                d3.csv("../data/sets.csv").then(function(sets) {
                     //console.log('sets: ',sets);
-                    d3.csv("data/components.csv").then(function(components) {
+                    d3.csv("../data/components.csv").then(function(components) {
                         //console.log('components: ',components);
-                        d3.csv("data/relationship.csv").then(function(relationship) {
+                        d3.csv("../data/relationship.csv").then(function(relationship) {
                             //console.log('relationship: ',relationship);
-                            d3.csv("data/articles.csv").then(function(articles) {
+                            d3.csv("../data/articles.csv").then(function(articles) {
                             //console.log('articles: ',articles);
-                                d3.csv("data/images.csv").then(function(images) {
+                                d3.csv("../data/images.csv").then(function(images) {
                                 //console.log('images: ',images);
 
                                     // copy images array into imageList array
