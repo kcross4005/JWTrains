@@ -154,12 +154,12 @@
         }
     }
 
-    // Creates a URL that points to an image if the image is present
-    function makeImgURL(image) {
-        let imageURL = `../images/${image}_web.JPG`;
-        imageTest = imageList.find(img => img.name === imageURL);
+    // Create a link that points to an image if the image is present
+    function makeImgLink(image, images) {
+        let imageName = `${image}_web.JPG`;
+        imageTest = images.find(img => img.Name === imageName);
         if (imageTest != null) {
-            imageLink = `<a href="#!" onclick=popUp(2,"${imageURL}"); return false;">${image}</a><br>`;
+            imageLink = `<a href="#!" onclick=popUp(2,"../images/${imageName}"); return false;">${image}</a><br>`;
         } else {
             imageLink = `${image}<br>`;
         }
@@ -167,7 +167,7 @@
     }
 
     // For returned set data, create table containing the Number and Description of the components in the set
-    function makeComponentTable(relationship, components, searchValue) {
+    function makeComponentTable(relationship, components, images, searchValue) {
         const setComponents = relationship.filter(e => e.SetNum === searchValue);
         let componentHTML = '';
         if (setComponents.length != 0) {
@@ -180,7 +180,7 @@
                 if (typeof oneComponent === 'undefined') {
                     componentHTML += `<tr><td>${setComponents[i].ComponentNum}</td><td><font color="red">Not present in component data</font></td></tr>`;
                 } else {
-                    imageURL = makeImgURL(oneComponent.Number);
+                    imageURL = makeImgLink(oneComponent.Number, images);
                     componentHTML += `<tr><td>${imageURL}</td><td>${oneComponent.Description}</td></tr>`;
                 }
             }
@@ -203,7 +203,7 @@
         return(articleLine); 
     }
 
-    // For returned component data, create table containing the data of all the sets containing the comonents
+    // For returned component data, create table containing the data of all the sets containing the components
     function makeSetTable(relationship, sets, searchValue) {
         const result = relationship.filter(e => e.ComponentNum === searchValue);
         let setHTML = '';
@@ -274,7 +274,6 @@
     // }
     
      // perform actions when submit clicked
-     var imageList = [];    // array to store if image exists in img folder or not
      let searchForm = document.getElementById("searchSets");
      searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -297,15 +296,7 @@
                             d3.csv("../data/articles.csv").then(function(articles) {
                             //console.log('articles: ',articles);
                                 d3.csv("../data/images.csv").then(function(images) {
-                                console.log('images: ',images);
-
-                                    // copy images array into imageList array
-                                    for (let i = 0; i < images.length; i++) {
-                                        let imageURL = `../images/${images[i].Name}`;
-                                        const imgObj = { name: imageURL, imgStat: 200};
-                                        imageList.push(imgObj);
-                                    }
-                                    console.log('imageList',imageList);
+                                //console.log('images: ',images);
 
                                     // In set array, change " c" track to " curved" and " s" track to " straight"
                                     for (let i = 0; i < sets.length; i++) {
@@ -325,7 +316,6 @@
 
                                     // "setYear": search sets by year
                                     if (searchType.value === "setYear") {
-                                        // console.log(searchType.value,searchTerm.value,searchTerm.value.slice(0,2));
                                         //console.log(Date());
                                         // Verify that user entered a year
                                         if (searchTerm.value.slice(0,2) === "19") {
@@ -350,7 +340,7 @@
                                                         if (!linePrinted.includes(i)) {
                                                             linePrinted.push(i);
                                                             returnCount++;
-                                                            let componentList = makeComponentTable(relationship, components, sets[i].Number);
+                                                            let componentList = makeComponentTable(relationship, components, images, sets[i].Number);
                                                             resultTable += 
                                                                 `<tr><td><b>Number: </b>${sets[i].Number}<br><b>Year: </b>${sets[i].Year}<br>` + 
                                                                 `<b>Gauge: </b>${sets[i].Gauge}<br><b>Description: </b>${sets[i].Description}<br>` + 
@@ -377,7 +367,7 @@
 
                                     // "number": Search sets/components by number
                                     }  else if (searchType.value === "number") {
-                                            console.log(searchType.value, searchTerm.value);
+                                            //console.log(searchType.value, searchTerm.value);
 
                                             let resultTable = "";   
                                             let returnCount = 0;
@@ -415,7 +405,7 @@
                                                         printHeader = 1;
                                                     }
                                                     returnCount++;
-                                                    let componentList = makeComponentTable(relationship, components, sets[i].Number);
+                                                    let componentList = makeComponentTable(relationship, components, images, sets[i].Number);
                                                     resultTable +=  
                                                         `<td><b>Number: </b>${sets[i].Number}<br><b>Year: </b>${sets[i].Year}<br>` + 
                                                         `<b>Gauge: </b>${sets[i].Gauge}<br><b>Description: </b>${sets[i].Description}<br>` +
