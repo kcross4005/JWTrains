@@ -54,27 +54,48 @@
         padding: 20px;
         background-color: #fff;
       }
+      select#searchType {
+        background-color: rgb(228, 223, 223);
+        border-color:rgb(228, 223, 223);
+        color: black;
+        height:30px;
+        font-size: 14pt;
+    }
+    .inputStyle {
+        background-color: white;
+        border-color: whitesmoke;
+        color: black;
+        height:30px;
+        font-size: 14pt;
+    }
+   .buttonStyle {
+        background-color: orange;
+        border-color: orange;
+        color: black;
+        height:30px;
+        font-size: 14pt;
+    }
+
 </style>
 <body>
 
     <!-- Page Header, search box -->
     <table style="border-collapse: collapse" width="100%" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
         <tbody><tr>
-            <td><center><font face="Arial"><font size="5">JWTRAINS.com - </font>
+            <td><center><font face="Arial"><font size="5">JWTRAINS.info - </font>
             <font style="font-size: 14pt">The <font color="#FF6600">Lionel</font> train search engine</font></font></center>
     <img src="../banner.JPG" alt="JWTRAINS.COM Repair Lionel Trains" width=90% height=auto border="0"></td></tr>
     <!-- <tr><td>Search for set # or year range (e.g., 510 or 1956 or 1960-1965) or component # or description(s) (e.g., 44 or locomotive, diesel)</td></tr> -->
     <tr><td>
             <form id="searchSets" action="">
-            <input id="searchSetBox" type="text">
             <select id="searchType">
                 <option value="number">Search Sets or Components by number</option>
                 <option value="setYear">Search Sets by year(s) (e.g., 1956 or 1957-1964)</option>
                 <option value="component">Search Components by Description</option>
             </select>
-                
+            <input class="inputStyle" id="searchSetBox" type="text">
             </select>
-            <button id="searchBtn" type="submit" font-size="46pt" onclick="replaceTable()">Search</button>
+            <button class="buttonStyle" id="searchBtn" type="submit" onclick="replaceTable()">Search</button>
             </form>
         </td>
     </tr>
