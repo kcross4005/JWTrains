@@ -1,4 +1,4 @@
-﻿Number,Description,Gauge
+Number,Description,Gauge
 44,"locomotive, missile launcher, U.S. Army",O
 45,"locomotive, missile launcher, U.S.M.C.",0-27
 88,"controller, reversing",
@@ -71,11 +71,13 @@
 665,"locomotive, 4-6-4, w/ feedwater heater",O
 671,"locomotive, turbine 6-8-6",O
 671RR,"locomotive, turbine 6-8-6, 1952 only, separate sale",O
+671RR,"locomotive, turbine 6-8-6, 1952 only, separate sale",O
 675,"locomotive, 2-6-2 (1949), or 2-6-4 (1952)",O
 681,"locomotive, turbine, 6-8-6",O
 682,"locomotive, turbine, 6-8-6, lubricator linkage",O
 685,"locomotive, 4-6-4",O
 726,"locomotive, Berkshire, 2-8-4",O
+726RR,"locomotive, Berkshire, 2-8-4, 1952 only, separate sale",O
 726RR,"locomotive, Berkshire, 2-8-4, 1952 only, separate sale",O
 736,"locomotive, Berkshire, 2-8-4",O
 746,"locomotive, 4-8-4, N & W",O
@@ -168,9 +170,11 @@
 2348,"locomotive, diesel, GP-9, M & SL",O
 2349,"locomotive, diesel, GP-9, Northern Pacific",0-27
 2345,"locomotive, diesel, F3, WP, A-A, 2 motors, 1952 only, separate sale",O
+2345,"locomotive, diesel, F3, WP, A-A, 2 motors, 1952 only, separate sale",O
 2350,"locomotive, EP-5, electric, New Haven",O
 2351,"locomotive, EP-5, electric, Milwaukee Road",O
 2352,"locomotive, EP-5, electric, Pennsylvania",O
+2355,"locomotive, diesel, F3, WP,  A-A, 2 motors, 1953 only, separate sale",O
 2355,"locomotive, diesel, F3, WP,  A-A, 2 motors, 1953 only, separate sale",O
 2357,"caboose, illuminated, SP type",
 2358,"locomotive, EP-5, electric, Great Northern",O
