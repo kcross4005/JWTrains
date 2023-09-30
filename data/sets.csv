@@ -1,496 +1,502 @@
-﻿Number,Year,Gauge,Price (Retail),Description,Track,Transformer,
-500,1955,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-501,1955,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-502,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-503,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-504,1955,0-27,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043,
-505,1955,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6019",1033,
-506,1955,0-27,$39.95 ,"Freight, no whistle","8 c, 3 s, 6029",1033,
-507,1955,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-508,1955,0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6019",1033,
-509,1955,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6019",1033,
-510,1955,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1033,
-511,1955,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-512,1955,0-27,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033,
-513,1955,0-27,$65.00 ,"Freight, horn","8 c, 5 s, 6019",1033,
-514,1955,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-515,1955,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1014,
-700,1956,0-27,$25.00 ,Freight,"8 c, 1 s, 6029",1015,
-701,1956,0-27,$29.95 ,Freight,"8 c, 3 s, 6029",1015,
-702,1956,0-27,$33.50 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1015,
-703,1956,0-27,$35.00 ,"Freight, no whistle","8 c, 3 s, 6029",1015,
-704,1956,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-705,1956,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015,
-706,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-707,1956,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053,
-708,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-709,1956,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-710,1956,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053,
-711,1956,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1053,
-712,1956,0-27,$67.50 ,"Freight, horn","8 c, 5 s, 6019",1033,
-713,1956,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-714,1956,0-27,$75.00 ,"Freight, horn","8 c, 5 s, 6019",1033,
-725,1957,0-27,$25.00 ,Freight,"8 c, 2 s, 1008",1015,
-726,1957,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015,
-727,1957,0-27,$29.95 ,Freight,"8 c, 4 s, 1008",1015,
-728,1957,0-27,$37.50 ,Freight,"8 c, 3 s, 6029",1015,
-729,1957,0-27,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015,
-730,1957,0-27,$43.75 ,"Passenger, no whistle, smoke","8 c, 3 s, 6029",1015,
-731,1957,0-27,$43.75 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1043,
-732,1957,0-27,$43.75 ,Freight,"8 c, 3 s, 6029",1043,
-733,1957,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-734,1957,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6029",1053,
-735,1957,0-27,$49.95 ,Passenger,"8 c, 5 s, 6029",1043,
-736,1957,0-27,$49.95 ,"Freight, no whistle, smoke","8 c, 5 s, 6029",1043-500,
-737,1957,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044,
-750,1956,0-27,$19.95 ,Freight,"8 c, 1 s, 6029",1015,
-800,1956,O,$39.95 ,"Freight, horn","8 c, 3 s, UCS",None,
-801,1956,O,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None,
-802,1956,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-803,1956,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-804,1956,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-805,1956,O,$69.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-806,1956,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-807,1956,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-808,1956,O,$75.00 ,"Passenger, horn","8 c, 7 s, UCS",None,
-809,1956,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-810,1956,O,$85.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-811,1956,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None,
-815,1957,O,$49.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-816,1957,O,$49.95 ,"Passenger, horn","8 c, 7 s, UCS",None,
-817,1957,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-818,1957,O,$55.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-819,1957,O,$59.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-820,1957,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-821,1957,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-822,1957,O,$69.95 ,"Freight, horn","8 c, 9 s, UCS",None,
-823,1957,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-824,1957,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-825,1957,Super O,$85.00 ,"Passenger, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None,
-826,1957,Super O,$87.50 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-827,1957,Super O,$87.50 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-828,1957,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None,
-829,1957,Super O,$110.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-20",None,
-1001,1955,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-1105,1959,0-27,N/A,Freight,"8 c, 2 s ",1026,
-1107,1960,0-27,N/A,Freight,"8 c, 2 s",1026,
-1109,1960,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026,
-1111,1948,0-27,$15.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1112,1948,0-27,$18.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1113,1950,0-27,$14.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1115,1949,0-27,$15.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1117,1949,0-27,$18.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1119,"1951, 1952",0-27,$17.75 ,"Freight, no whistle","8 c, 1 s, 1009",1011,
-1123,1961,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026,
-1124,1961,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026,
-1125,1961,0-27,N/A,"Freight, no horn","8 c, 2 s",1026,
-1400,1946,0-27,$30.00 ,"Passenger, no whistle","8 c, 3 s, 1019",1037,
-1401,1946,0-27,$24.95 ,"Freight, no whistle","8 c, 1 s, 1019",1037,
-1402,1946,0-27,$30.00 ,"Passenger, no whistle","8 c, 3 s, 1019",1037,
-1403,1946,0-27,$30.00 ,"Freight, no whistle","8 c, 3 s, 1019",1037,
-1405,1946,0-27,$30.00 ,"Freight, no whistle","8 c, 3 s, 1019",1037,
-1409,1946,0-27,$40.00 ,"Freight, no whistle","8 c, 5 s, 1019",1037,
-1431,1947,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 1019",1035,
-1432,1947,0-27,$27.50 ,"Passenger, no whistle","8 c, 3 s, 1019",1035,
-1433,1947,0-27,$27.50 ,"Freight, no whistle","8 c, 3 s, 1019",1035,
-1465,1952,0-27,$22.50 ,"Freight, no whistle","8 c, 3 s, 6019",1012,
-1500,"1953, 1954",0-27,$19.95 ,"Freight, no whistle, 1130T vice 6066T in 1954","8 c, 1 s, 6009",1012,
-1523,1954,0-27,$49.95 ,"Freight, no whistle","8 c, 5 s, 6019",1034,
-1525,1955,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-1527,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-1529,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014,
-1542,1956,0-27,$19.95 ,Freight,"8 c, 1 s, 6029",1015,
-1543,1956,0-27,$25.00 ,Freight,"8 c, 1 s, 6029",1015,
-1545,1956,0-27,$29.95 ,Freight,"8 c, 3 s, 6029",1015,
-1549,1956,0-27,$35.00 ,"Freight, no whistle","8 c, 3 s, 6029",1015,
-1552,1956,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015,
-1569,1957,0-27,$25.00 ,Freight,"8 c, 2 s, 1008",1015,
-1571,1957,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015,
-1573,1957,0-27,$29.95 ,Freight,"8 c, 4 s, 1008",1015,
-1575,1957,0-27,$37.50 ,Freight,"8 c, 3 s, 6029",1015,
-1581,1957,0-27,$43.75 ,Freight,"8 c, 3 s, 6029",1043,
-1586,1957,0-27,$49.95 ,Passenger,"8 c, 5 s, 6029",1043,
-1590,1958,0-27,$25.00 ,"Freight, no whistle","8 c, 2 s, 1008",1015,
-1591,1958,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015,
-1593,1958,0-27,$35.00 ,Freight,"8 c, 2 s, 1008",1015,
-1595,1958,0-27,$37.50 ,"Freight, no bell","8 c, 1 s, 6029",1015,
-1599,1958,0-27,$39.95 ,Freight,"8 c, 3 s, 6029",1015,
-1600,1958,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015,
-1609,"1959, 1960",0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1016,
-1611,1959,0-27,$25.00 ,Freight,"8 c, 1 s, 1008-50",1016,
-1612,"1959, 1960",0-27,$29.95 ,"Passenger, no whistle","8 c, 2 s",1015,
-1615,1959,0-27,$39.95 ,Freight,"8 c, 5 s, 6029",1015,
-1629,1960,0-27,$29.95 ,Freight,"8 c, 1 s, 1008-50",1015,
-1633,1960,0-27,$39.95 ,Freight,"8 c, 3 s, 6029",1015,
-1641,1961,0-27,$25.00 ,"Freight, no whistle","8 c, 1 s, 1008-50",1010,
-1642,1961,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1025,
-1643,1961,0-27,$29.95 ,"Freight, no horn","8 c, 1 s, 1008-50",1025,
-1644,1961,0-27,$39.95 ,"Passenger, no whistle","12 c, 4 s, 90 Xing",1025,
-1645,1961,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 1008-50","1073, 147",
-1646,1961,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50","1073, 147",
-1647,1961,0-27,$49.95 ,"Freight, no horn","8 c, 3 s, 6019",1073,
-1648,1961,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1063,
-1649,1961,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 1008-50",1063,
-1650,1961,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1063,
-1651,1961,0-27,$69.95 ,"Passenger, horn","8 c, 3 s, 6029",1063,
-1652,1961,0-27,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, 1008-50",1073,
-1800,"1959, 1960",0-27,$25.00 ,"Passenger, no whistle",None,None,
-1805,1960,0-27,$35.00 ,Freight,None,None,
-1809,1961,0-27,$29.95 ,"Freight, no whistle, smoke",None,None,
-1810,1961,0-27,$35.00 ,"Freight, no horn",None,None,
-2100,1946,O,$37.50 ,"Passenger, no whistle","8 c, 3 s, RCS",None,
-2101,1946,O,$37.50 ,"Freight, no whistle","8 c, 3 s, RCS",None,
-2527,"1959, 1960",Super O,$39.95 ,Freight,"12 c, 1 s, 1 insulated, 39-25",None,
-2570,1961,Super O,$49.95 ,"Freight, no horn","12 c, 2 s, 39-25",None,
-2571,1961,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 2 s, 39-25",None,
-2572,1961,Super O,$59.95 ,"Freight, horn","12 c, 4 s, 39-25",None,
-2573,1961,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 4 s, 39-25",None,
-2574,1961,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 half s, 39-25",None,
-2575,1961,Super O,$100.00 ,"Freight, horn","12 c, 6 s, 39-35",None,
-2576,1961,Super O,$100.00 ,"Passenger, horn","12 c, 6 s, 39-25",None,
-11001,1962,0-27,N/A,"Freight, no whistle","8 c,2 s",1026,
-11011,1962,0-27,N/A,"Freight, no horn","8 c,2 s",1026,
-11201,1962,0-27,$19.95 ,"Freight, no whistle","8 c, 2 s",1010,
-11212,1962,0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 1008-50",1010,
-11222,1962,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1025,
-11232,1962,0-27,$29.95 ,"Freight, no horn","8 c, 1 s, 1008-50",1025,
-11242,1962,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1073,
-11252,1962,0-27,$39.95 ,"Freight, no horn","8 c, 3 s, 1008-50",1025,
-11268,1962,0-27,$49.95 ,"Freight, no horn","8 c, 3 s, 6029",1073,
-11278,1962,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50","1073, 147",
-11288,1962,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 1008-50","1073, 147",
-11298,1962,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1063,
-11308,1962,0-27,$69.95 ,"Passenger, no horn","8 c, 3 s, 6029",1063,
-11311,1963,0-27,$14.95 ,"Freight, no whistle",8 c,1026,
-11321,1963,0-27,$16.95 ,"Freight, no horn","8 c, 2 s",1026,
-11331,1963,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6139",1010,
-11341,1963,0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 6139",1010,
-11351,1963,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6139",1025,
-11361,1963,0-27,$35.00 ,"Freight, no horn","8 c, 3 s, 6139",1025,
-11375,1963,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6139","1073, 147",
-11385,1963,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6139","1073, 147",
-11395,1963,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029","1073, 147",
-11405,1963,0-27,$69.95 ,"Passenger, horn","8 c, 3 s, 6029","1073, 147",
-11415,1963,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026,
-11420,1964,0-27,$11.95 ,"Freight, no whistle",8 c,1026,
-11430,1964,0-27,$14.95 ,"Freight, no whistle","8 c, 1 s, 6149",1026,
-11440,1964,0-27,$17.95 ,"Freight, no horn","8 c, 1 s, 6149",1026,
-11450,1964,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6149",1010,
-11460,1964,0-27,$34.95 ,"Freight, whistle, smoke","8 c, 1 s, 6149","1073, 147",
-11470,1964,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6149",1025,
-11480,1964,0-27,$34.95 ,"Freight, no horn","12 c, 3 s, 6149, 90 Xing",1025,
-11490,"1964, 1965",0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6149","1073, 147",
-11500,"1964, 1965, 1966",0-27,$44.95 ,"Freight, whistle, smoke","8 c, 3 s, 6149","1073, 147",
-11510,1964,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6149",1025,
-11520,"1965, 1966",0-27,$20.00 ,"Freight, no whistle","8 c, 1 s, 6149",1010,
-11530,"1965, 1966",0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 6149",1010,
-11540,"1965, 1966",0-27,$30.00 ,"Freight, no whistle, smoke","8 c, 1 s, 6149",1025,
-11550,"1965, 1966",0-27,$40.00 ,"Freight, whistle, smoke","8 c, 1 s, 6149","1073, 147",
-11560,"1965, 1966",0-27,$37.50 ,"Freight, no horn","12 c, 3 s, 6149, 90 Xing",1025,
-11590,1966,O,$60.00 ,"Passenger, horn","8 c, 3 s, 6149","1073, 147",
-11600,1968,0-27,N/A,"Freight, whistle, smoke","12 c, 6 s, 1122 LH, 1020 Xing, 6149",1044,
-11710,1969,0-27,N/A,"Freight, no whistle, ","8 c, 2 s",1025,
-11720,1969,0-27,N/A,"Freight, no horn","8 c, 3 s, 6149",1025,
-11730,1969,0-27,N/A,"Freight, no horn","8 c, 5 s, 6149",1025,
-11740,1969,0-27,N/A,"Freight, no horn","8 c, 7 s, 6149",1025,
-11750,1969,0-27,N/A,"Freight, no whistle, smoke","8 c, 7 s, 6149",1025,
-11760,1969,0-27,N/A,"Freight, whistle, smoke","8 c, 7 s, 6149",1044,
-12502,1962,0-27,$35.00 ,"Passenger, no whistle",None,None,
-12512,1962,0-27,$39.95 ,"Freight, no horn",None,None,
-12700,1964,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-12710,"1964, 1965, 1966",O,$75.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",LW,
-12720,1964,O,$65.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-12730,"1964, 1965, 1966",O,$79.95 ,"Freight, horn","8 c, 5 s, UCS",LW,
-12780,"1964, 1965, 1966",O,$120.00 ,"Passenger, horn","8 c, 5 s, UCS",None,
-12800,"1965, 1966",O,$60.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-12820,1965,O,$100.00 ,"Freight, horn","8 c, 5 s, UCS",LW,
-12840,1966,O,$80.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",LW,
-12850,1966,O,$135.00 ,"Freight, horn","10 c, 14 s, UCS, pr O22T sw",LW,
-13008,1962,Super O,$49.95 ,"Freight, whistle, smoke","8 c, 1 s, 1 half s, 39-25",None,
-13018,1962,Super O,$49.95 ,"Freight, no horn","8 c, 1 s, 1 half s, 39-25",None,
-13028,1962,Super O,$59.95 ,"Freight, no horn","8 c, 1 s, 1 half s, 39-25",None,
-13036,1962,Super O,$59.95 ,"Passenger, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None,
-13048,1962,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None,
-13058,1962,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 half s, 39-25",None,
-13068,1962,Super O,$100.00 ,"Freight, horn","12 c, 5 s, 1 half s, 39-25",None,
-13078,1962,Super O,$125.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None,
-13088,1962,Super O,$120.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None,
-13098,1963,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None,
-13108,1963,Super O,$49.95 ,"Freight, horn","12 c, 1 s, 1 half s, 39-25",None,
-13118,1963,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None,
-13128,1963,Super O,$89.95 ,"Freight, horn","12 c, 1 s, 1 half s, 39-25",None,
-13138,1963,Super O,$100.00 ,"Freight, horn","12 c, 5 s, 1 half s, 39-25",None,
-13148,1963,Super O,$120.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None,
-13150,"1964, 1965, 1966",O,$200.00 ,"Freight, whistle, smoke","16 c, 19 s, 4 half s, 112 pr sw, 39-25",ZW,
-1000W,1955,0-27,$39.95 ,"Freight, no whistle","8 c, 3 s, 6029",1033,
-1400W,1946,0-27,$35.95 ,"Passenger,  whistle","8 c, 3 s, 1019",1041,
-1401W,1946,0-27,$30.95 ,"Freight, whistle","8 c, 1 s, 1019",1041,
-1402W,1946,0-27,$35.95 ,"Passenger, whistle","8 c, 3 s, 1019",1041,
-1403W,1946,0-27,$35.95 ,"Freight, whistle","8 c, 3 s, 1019",1041,
-1405W,1946,0-27,$35.95 ,"Freight, whistle","8 c, 3 s, 1019",1041,
-1407B,1946,0-27,$37.50 ,"Freight, bell ringing tender","8 c, 5 s, 1019",1037,
-1409W,1946,0-27,$45.95 ,"Freight, whistle","8 c, 5 s, 1019",1041,
-1411W,1946,0-27,$42.50 ,"Freight, whistle","8 c, 3 s, 1019",1041,
-1413WS,1946,0-27,$55.00 ,"Freight, whistle, smoke","8 c, 3 s, 1019",1041,
-1415WS,1946,0-27,$67.50 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041,
-1417WS,1946,0-27,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, 1019",1041,
-1419WS,1946,0-27,$85.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041,
-1421WS,1946,0-27,$85.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041,
-1423W,"1948, 1949",0-27,$29.95 ,"Freight, whistle","8 c, 3 s, 6019",1042,
-1425B,"1948, 1949",0-27,$35.95 ,"Freight, bell ringing tender","8 c, 3 s, 6019",1034,
-1426WS,"1948, 1949",0-27,$42.75 ,"Passenger, whistle, smoke","8 c, 3 s, 6019",1032,
-1427WS,1948,0-27,$39.75 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1032,
-1429WS,1948,0-27,$47.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1430WS,"1948, 1949",0-27,$59.75 ,"Passenger, whistle, smoke","8 c, 7 s, 6019",1033,
-1431W,1947,0-27,$27.50 ,"Freight, whistle","8 c, 1 s, 1019",1042,
-1432W,1947,0-27,$33.50 ,"Passenger, whistle","8 c, 3 s, 1019",1042,
-1433W,1947,0-27,$33.50 ,"Freight, whistle","8 c, 3 s, 1019",1042,
-1434WS,1947,0-27,$42.50 ,"Passenger, whistle, smoke","8 c, 3 s, 1019",S,
-1435WS,1947,0-27,$42.50 ,"Freight, whistle, smoke","8 c, 3 s, 1019",S,
-1437WS,1947,0-27,$47.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S,
-1439WS,1947,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S,
-1441WS,1947,0-27,$57.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S,
-1443WS,1947,0-27,$70.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",S,
-1445WS,1948,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1447WS,"1948, 1949",0-27,$59.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1449WS,1948,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 11 s, 6019",1033,
-1451WS,1949,0-27,$39.75 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1453WS,1949,0-27,$47.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1455WS,1949,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1457B,"1949, 1950",0-27,"$49.50 (1949), $39.95 (1950)","Freight, bell ringing switcher","8 c, 5 s, 6019",1034,
-1459WS,1949,0-27,$67.50 ,"Freight, whistle, smoke","8 c, 11 s, 6019",1033,
-1461S,1950,0-27,$19.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6019",1012,
-1463W,"1950, 1951",0-27,"$29.95 (1950), $35.75 (1951)","Freight, whistle, 2036 (1950), 2026 (1951)","8 c, 3 s, 6019",1033,
-1464W,"1950, 1951, 1952, 1953",0-27,"$55.00 (1950), $66.50 (1951, 2, 3)","Passenger, horn, 2033 vice 2023 in 1952","8 c, 5 s, 6019",1033,
-1467W,"1950, 1951, 1952, 1953",0-27,"$47.50 (1950), $57.50 (1951, 2, 3)","Freight, horn","8 c, 5 s, 6019",1033,
-1469WS,"1950, 1951",0-27,"$39.95 (1950), $48.50 (1951)","Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1471WS,"1950, 1951",0-27,"$57.50 (1950), $70.00 (1951)","Freight, whistle, smoke","8 c, 7 s, 6019",1033,
-1473WS,"1950, 1951",0-27,"$49.95 (1950), $62.50 (1951)","Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 5 s, 6019",1033,
-1475WS,1950,0-27,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033,
-1477S,"1951, 1952",0-27,$29.95 ,"Freight, no whistle","8 c, 3 s, 6019",1034,
-1479WS,1952,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1481WS,1951,0-27,$70.00 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033,
-1483WS,1952,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033,
-1484WS,1952,0-27,$70.00 ,"Passenger, whistle, smoke","8 c, 7 s, 6019",1033,
-1485WS,1952,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1489WS,1952,0-27,$45.00 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1501S,1953,0-27,$24.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043,
-1502WS,1953,0-27,$57.50 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033,
-1503WS,"1953, 1954",0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1505WS,1953,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1507WS,1953,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1509WS,1953,0-27,$70.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1511S,1953,0-27,$32.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6019",1043,
-1513S,"1954, 1955",0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043,
-1515WS,1954,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1516WS,1954,0-27,$59.95 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033,
-1517W,1954,0-27,$59.95 ,"Freight, horn","8 c, 5 s, 6019",1033,
-1519WS,1954,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1520W,1954,0-27,$69.50 ,"Passenger, horn","8 c, 5 s, 6019",1033,
-1521WS,1954,0-27,$69.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1526S,1955,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1014,
-1531W,1955,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6019",1033,
-1533WS,1955,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033,
-1534W,1955,0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6019",1033,
-1535W,1955,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6019",1033,
-1536W,1955,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1033,
-1537WS,1955,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1538WS,1955,0-27,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033,
-1539W,1955,0-27,$65.00 ,"Freight, horn","8 c, 5 s, 6019",1033,
-1541WS,1955,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1547S,1956,0-27,$33.50 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1015,
-1551W,1956,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1553W,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-1555WS,1956,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053,
-1557W,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-1559W,1956,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6019",1053,
-1561WS,1956,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053,
-1562W,1956,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1053,
-1563W,1956,0-27,$67.50 ,"Freight, horn","8 c, 5 s, 6019",1033,
-1565WS,1956,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033,
-1567W,1956,0-27,$75.00 ,"Freight, horn","8 c, 5 s, 6019",1033,
-1577S,1957,0-27,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015,
-1578S,1957,0-27,$43.75 ,"Passenger, no whistle, smoke","8 c, 3 s, 6029",1015,
-1579S,1957,0-27,$43.75 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1043,
-1583WS,1957,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-1585W,1957,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6029",1053,
-1587S,"1957, 1958",0-27,$49.95 ,"Freight, no whistle, smoke","8 c, 5 s, 6029",1043-500,
-1589WS,1957,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044,
-1597S,1958,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015,
-1601W,1958,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1603WS,1958,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-1605W,1958,0-27,$55.00 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1607WS,1958,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044,
-1608W,1958,0-27,$65.00 ,"Passenger, horn","8 c, 5 s, 6029",1053,
-1613S,1959,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 1008-50",1015,
-1617S,1959,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015,
-1619W,1959,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1621WS,1959,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-1623W,1959,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1625WS,1959,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1053,
-1626W,1959,0-27,$65.00 ,"Passenger, horn","8 c, 5 s, 6029",1053,
-1627S,1960,0-27,$25.00 ,"Freight, no whistle, smoke","8 c, 1 s, 1008-50",1015,
-1631WS,1960,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1053,
-1635WS,1960,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-1637W,1960,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6029",1053,
-1639WS,1960,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053,
-1640W,1960,0-27,$65.00 ,"Passenger, horn, 1640 Pres Whsl Stop Kit","8 c, 3 s, 6029",1053,
-2100W,1946,O,$43.50 ,"Passenger, whistle","8 c, 3 s, RCS","None, 167",
-2101W,1946,O,$43.50 ,"Freight, whistle","8 c, 3 s, RCS","None, 167",
-2103W,1946,O,$45.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2105WS,1946,O,$50.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2110WS,1946,O,$75.00 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2111WS,1946,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2113WS,1946,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167",
-2114WS,1946,O,$77.50 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2115WS,1946,O,$87.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2120S,1947,O,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, RCS","None, 88",
-2120WS,1947,O,$43.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2121S,1947,O,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, RCS","None, 88",
-2121WS,1947,O,$41.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2123WS,1947,O,$47.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167",
-2124W,1947,O,$62.50 ,"Passenger, horn","8 c, 5 s, RCS","None, 167",
-2125WS,1947,O,$50.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2126WS,1947,O,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2127WS,1947,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167",
-2129WS,1947,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167",
-2131WS,1947,O,$75.00 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167",
-2133W,1948,O,$65.00 ,"Freight, horn","8 c, 7 s, RCS",None,
-2135WS,"1948, 1949",O,"$39.95 (1948), $37.50 (1949)","Freight, whistle, smoke","8 c, 3 s, RCS",None,
-2136WS,"1948, 1949",O,"$39.95 (1948), $47.50 (1949)","Passenger, whistle, smoke","8 c, 3 s, UCS",None,
-2137WS,1948,O,$47.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS",None,
-2139W,"1948, 1949",O,$57.50 ,"Freight, horn","8 c, 5 s, RCS",None,
-2140WS,"1948, 1949",O,$57.75 ,"Passenger, whistle, smoke","8 c, 5 s, RCS (1948), UCS (1949)",None,
-2141WS,"1948, 1949",O,"$58.75 (1948), $57.50 (1949)","Freight, whistle, smoke","8 c, 5 s, RCS",None,
-2143WS,1948,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS",None,
-2144W,"1948, 1949",O,$67.50 ,"Passenger, horn","8 c, 5 s, RCS (1948), UCS (1949)",None,
-2145WS,1948,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS",None,
-2146WS,"1948, 1949",O,$75.00 ,"Passenger, whistle, smoke","8 c, 7 s, RCS (1948), UCS (1949)",None,
-2147WS,1949,O,$50.00 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None,
-2148WS,1950,O,$85.00 ,"Passenger, whistle, smoke","8 c, 7 s, UCS",None,
-2149B,1949,O,$52.50 ,"Freight, bell ringing switcher","8 c, 5 s, UCS",None,
-2150WS,1950,O,$55.00 ,"Passenger, whistle, smoke","8 c, 5 s, UCS",None,
-2151W,1949,O,$67.50 ,"Freight, horn","8 c, 9 s, UCS",None,
-2153WS,1949,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2155WS,1949,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2159W,1950,O,$52.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2161W,1950,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2163WS,"1950, 1951",O,"$49.95 (1950), $60.00 (1951)","Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2165WS,1950,O,$57.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2167WS,"1950, 1951",O,"$39.95 (1950), $47.75 (1951)","Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2169WS,1950,O,$79.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2171W,1950,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2173WS,"1950, 1951",O,"$52.50 (1950), $62.50 (1951)","Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None,
-2175W,"1950, 1951",O,"$57.50 (1950), $70.00 (1951)","Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None,
-2177WS,1952,O,$39.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2179WS,1952,O,$47.75 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2183WS,1952,O,$54.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2185W,"1950, 1951",O,"$57.50 (1950), $70.00 (1951)","Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None,
-2187WS,1952,O,$62.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2189WS,1952,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2190W,"1952, 1953",O,$89.50 ,"Passenger, horn","8 c, 9 s, UCS",None,
-2191W,1952,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2193W,1952,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2201WS,"1953, 1954",O,$39.95 ,"Freight, whistle, smoke, 665 vice 685 in 1954","8 c, 5 s, UCS",None,
-2203WS,1953,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2205WS,1953,O,$59.75 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2207W,1953,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2209W,1953,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2211WS,1953,O,$62.50 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2213WS,1953,O,$70.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2217WS,1954,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2219W,1954,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-2221WS,1954,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2222WS,1954,O,$65.00 ,"Passenger, whistle, smoke","8 c, 7 s, UCS",None,
-2223W,1954,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2225WS,1954,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2227W,1954,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2229W,1954,O,$69.50 ,Freight horn,"8 c, 7 s, UCS",None,
-2231W,1954,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2234W,1954,O,$89.50 ,"Passenger, horn","8 c, 9 s, UCS",None,
-2235W,1955,O,$39.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-2237WS,1955,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2239W,1955,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-2241WS,1955,O,$55.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2243W,1955,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-2244W,1955,O,$65.00 ,"Passenger, horn","8 c, 7 s, UCS",None,
-2245WS,1955,O,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2247W,1955,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2249WS,1955,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2251W,1955,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2253W,1955,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2254W,1955,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None,
-2255W,1956,O,$39.95 ,"Freight, horn","8 c, 3 s, UCS",None,
-2257WS,1956,O,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None,
-2259W,1956,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-2261WS,1956,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2263W,1956,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2265WS,1956,O,$69.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2267W,1956,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-2269W,1956,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2270W,1956,O,$75.00 ,"Passenger, horn","8 c, 7 s, UCS",None,
-2271W,1956,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-2273W,1956,O,$85.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2274W,1956,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None,
-2275W,1957,O,$49.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-2276W,1957,O,$49.95 ,"Passenger, horn","8 c, 7 s, UCS",None,
-2277WS,1957,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-2279W,1957,O,$55.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-2281W,1957,O,$59.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-2283WS,1957,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-2285W,1957,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None,
-2287W,1957,O,$69.95 ,"Freight, horn","8 c, 9 s, UCS",None,
-2289WS,1957,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-2291W,1957,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-2292WS,1957,Super O,$85.00 ,"Passenger, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None,
-2293W,1957,Super O,$87.50 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-2295WS,1957,Super O,$87.50 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-2296W,1957,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None,
-2297WS,1957,Super O,$110.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-20",None,
-2501W,1958,Super O,$49.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2502W,1958,Super O,$59.95 ,"Passenger, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2503WS,1958,Super O,$59.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-2505W,1958,Super O,$59.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2507W,1958,Super O,$65.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2509WS,1958,Super O,$65.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None,
-2511W,1958,Super O,$69.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-10",None,
-2513W,1958,Super O,$69.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-2515WS,1958,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None,
-2517W,1958,Super O,$75.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2518W,1958,Super O,$75.00 ,"Passenger, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2519W,1958,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None,
-2521WS,1958,Super O,$89.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-15",None,
-2523W,1958,Super O,$95.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None,
-2525WS,1958,Super O,$100.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-5",None,
-2526W,1958,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None,
-2528WS,"1959, 1960, 1961",Super O,$49.95 ,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None,
-2529W,1959,Super O,$59.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None,
-2531WS,1959,Super O,$59.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None,
-2533W,1959,Super O,$65.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None,
-2535WS,1959,Super O,$69.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-35",None,
-2537W,1959,Super O,$75.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None,
-2539WS,1959,Super O,$79.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-35",None,
-2541W,1959,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None,
-2543WS,1959,Super O,$95.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None,
-2544W,"1959, 1960",Super O,$100.00 ,"Passenger, horn","12 c, 5 s, 1 insulated, 39-25",None,
-2545WS,1959,Super O,$100.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None,
-2547WS,1960,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None,
-2549W,1960,Super O,$59.95 ,"Freight, horn","18 c, 2 s, 5 half s, 1 insulated, 39-25",None,
-2551W,1960,Super O,$75.00 ,"Freight, horn","24 c, 13 s, 1 insulated, 39-25",None,
-2553W,1960,Super O,$100.00 ,"Freight, whistle, smoke","18 c, 7 s, 2 half c, 6 half s, 1 insulated, 90 Xing, LH sw, 39-35",None,
-2555W,1960,Super O,$150.00 ,"Freight, horn, & complementing HO pieces","12 c, 3 s, 1 insulated, 39-25",1044,
-4109WS,"1946, 1947",O,$75.00 ,"Electronic freight, whistle, smoke","8 c, 4 s","None, ECU-1",
-4110WS,"1948, 1949",O,$199.95 ,"Electronic freight, whistle, smoke","10 c, 18 s, 2 half s, pr O-22 switches","VW, ECU-1",
-463W,1945,O,$33.50 ,Freight ,"8 c, 3 s, RCS","None, 167",
-A-20,1955,O,$39.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-A-21,1955,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-A-22,1955,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None,
-A-23,1955,O,$55.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None,
-A-24,1955,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None,
-A-25,1955,O,$65.00 ,"Passenger, horn","8 c, 7 s, UCS",None,
-A-26,1955,O,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-A-27,1955,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-A-28,1955,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None,
-A-29,1955,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None,
-A-30,1955,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None,
-A-31,1955,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None,
+﻿Number,Year,Gauge,Price (Retail),Description,Track,Transformer
+500,1955,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+501,1955,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+502,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+503,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+504,1955,0-27,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043
+505,1955,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6019",1033
+506,1955,0-27,$39.95 ,"Freight, no whistle","8 c, 3 s, 6029",1033
+507,1955,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+508,1955,0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6019",1033
+509,1955,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6019",1033
+510,1955,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1033
+511,1955,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+512,1955,0-27,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033
+513,1955,0-27,$65.00 ,"Freight, horn","8 c, 5 s, 6019",1033
+514,1955,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+515,1955,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1014
+700,1956,0-27,$25.00 ,Freight,"8 c, 1 s, 6029",1015
+701,1956,0-27,$29.95 ,Freight,"8 c, 3 s, 6029",1015
+702,1956,0-27,$33.50 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1015
+703,1956,0-27,$35.00 ,"Freight, no whistle","8 c, 3 s, 6029",1015
+704,1956,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6029",1053
+705,1956,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015
+706,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+707,1956,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053
+708,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+709,1956,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+710,1956,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053
+711,1956,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1053
+712,1956,0-27,$67.50 ,"Freight, horn","8 c, 5 s, 6019",1033
+713,1956,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+714,1956,0-27,$75.00 ,"Freight, horn","8 c, 5 s, 6019",1033
+725,1957,0-27,$25.00 ,Freight,"8 c, 2 s, 1008",1015
+726,1957,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015
+727,1957,0-27,$29.95 ,Freight,"8 c, 4 s, 1008",1015
+728,1957,0-27,$37.50 ,Freight,"8 c, 3 s, 6029",1015
+729,1957,0-27,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015
+730,1957,0-27,$43.75 ,"Passenger, no whistle, smoke","8 c, 3 s, 6029",1015
+731,1957,0-27,$43.75 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1043
+732,1957,0-27,$43.75 ,Freight,"8 c, 3 s, 6029",1043
+733,1957,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+734,1957,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6029",1053
+735,1957,0-27,$49.95 ,Passenger,"8 c, 5 s, 6029",1043
+736,1957,0-27,$49.95 ,"Freight, no whistle, smoke","8 c, 5 s, 6029",1043-500
+737,1957,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044
+750,1956,0-27,$19.95 ,Freight,"8 c, 1 s, 6029",1015
+800,1956,O,$39.95 ,"Freight, horn","8 c, 3 s, UCS",None
+801,1956,O,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None
+802,1956,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None
+803,1956,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+804,1956,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None
+805,1956,O,$69.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+806,1956,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None
+807,1956,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None
+808,1956,O,$75.00 ,"Passenger, horn","8 c, 7 s, UCS",None
+809,1956,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None
+810,1956,O,$85.00 ,"Freight, horn","8 c, 7 s, UCS",None
+811,1956,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None
+815,1957,O,$49.95 ,"Freight, horn","8 c, 5 s, UCS",None
+816,1957,O,$49.95 ,"Passenger, horn","8 c, 7 s, UCS",None
+817,1957,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+818,1957,O,$55.00 ,"Freight, horn","8 c, 7 s, UCS",None
+819,1957,O,$59.95 ,"Freight, horn","8 c, 7 s, UCS",None
+820,1957,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+821,1957,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None
+822,1957,O,$69.95 ,"Freight, horn","8 c, 9 s, UCS",None
+823,1957,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+824,1957,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+825,1957,Super O,$85.00 ,"Passenger, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None
+826,1957,Super O,$87.50 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+827,1957,Super O,$87.50 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+828,1957,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None
+829,1957,Super O,$110.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-20",None
+1001,1955,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+1105,1959,0-27,N/A,Freight,"8 c, 2 s ",1026
+1107,1960,0-27,N/A,Freight,"8 c, 2 s",1026
+1109,1960,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026
+1111,1948,0-27,$15.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1112,1948,0-27,$18.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1113,1950,0-27,$14.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1115,1949,0-27,$15.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1117,1949,0-27,$18.95 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1119,"1951, 1952",0-27,$17.75 ,"Freight, no whistle","8 c, 1 s, 1009",1011
+1123,1961,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026
+1124,1961,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026
+1125,1961,0-27,N/A,"Freight, no horn","8 c, 2 s",1026
+1400,1946,0-27,$30.00 ,"Passenger, no whistle","8 c, 3 s, 1019",1037
+1401,1946,0-27,$24.95 ,"Freight, no whistle","8 c, 1 s, 1019",1037
+1402,1946,0-27,$30.00 ,"Passenger, no whistle","8 c, 3 s, 1019",1037
+1403,1946,0-27,$30.00 ,"Freight, no whistle","8 c, 3 s, 1019",1037
+1405,1946,0-27,$30.00 ,"Freight, no whistle","8 c, 3 s, 1019",1037
+1409,1946,0-27,$40.00 ,"Freight, no whistle","8 c, 5 s, 1019",1037
+1431,1947,0-27,$22.50 ,"Freight, no whistle","8 c, 1 s, 1019",1035
+1432,1947,0-27,$27.50 ,"Passenger, no whistle","8 c, 3 s, 1019",1035
+1433,1947,0-27,$27.50 ,"Freight, no whistle","8 c, 3 s, 1019",1035
+1465,1952,0-27,$22.50 ,"Freight, no whistle","8 c, 3 s, 6019",1012
+1500,"1953, 1954",0-27,$19.95 ,"Freight, no whistle, 1130T vice 6066T in 1954","8 c, 1 s, 6009",1012
+1523,1954,0-27,$49.95 ,"Freight, no whistle","8 c, 5 s, 6019",1034
+1525,1955,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+1527,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+1529,1955,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6029",1014
+1542,1956,0-27,$19.95 ,Freight,"8 c, 1 s, 6029",1015
+1543,1956,0-27,$25.00 ,Freight,"8 c, 1 s, 6029",1015
+1545,1956,0-27,$29.95 ,Freight,"8 c, 3 s, 6029",1015
+1549,1956,0-27,$35.00 ,"Freight, no whistle","8 c, 3 s, 6029",1015
+1552,1956,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015
+1569,1957,0-27,$25.00 ,Freight,"8 c, 2 s, 1008",1015
+1571,1957,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015
+1573,1957,0-27,$29.95 ,Freight,"8 c, 4 s, 1008",1015
+1575,1957,0-27,$37.50 ,Freight,"8 c, 3 s, 6029",1015
+1581,1957,0-27,$43.75 ,Freight,"8 c, 3 s, 6029",1043
+1586,1957,0-27,$49.95 ,Passenger,"8 c, 5 s, 6029",1043
+1590,1958,0-27,$25.00 ,"Freight, no whistle","8 c, 2 s, 1008",1015
+1591,1958,0-27,$29.95 ,Freight,"8 c, 2 s, 1008",1015
+1593,1958,0-27,$35.00 ,Freight,"8 c, 2 s, 1008",1015
+1595,1958,0-27,$37.50 ,"Freight, no bell","8 c, 1 s, 6029",1015
+1599,1958,0-27,$39.95 ,Freight,"8 c, 3 s, 6029",1015
+1600,1958,0-27,$39.95 ,Passenger,"8 c, 3 s, 6029",1015
+1609,"1959, 1960",0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1016
+1611,1959,0-27,$25.00 ,Freight,"8 c, 1 s, 1008-50",1016
+1612,"1959, 1960",0-27,$29.95 ,"Passenger, no whistle","8 c, 2 s",1015
+1615,1959,0-27,$39.95 ,Freight,"8 c, 5 s, 6029",1015
+1629,1960,0-27,$29.95 ,Freight,"8 c, 1 s, 1008-50",1015
+1633,1960,0-27,$39.95 ,Freight,"8 c, 3 s, 6029",1015
+1641,1961,0-27,$25.00 ,"Freight, no whistle","8 c, 1 s, 1008-50",1010
+1642,1961,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1025
+1643,1961,0-27,$29.95 ,"Freight, no horn","8 c, 1 s, 1008-50",1025
+1644,1961,0-27,$39.95 ,"Passenger, no whistle","12 c, 4 s, 90 Xing",1025
+1645,1961,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 1008-50","1073, 147"
+1646,1961,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50","1073, 147"
+1647,1961,0-27,$49.95 ,"Freight, no horn","8 c, 3 s, 6019",1073
+1648,1961,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1063
+1649,1961,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 1008-50",1063
+1650,1961,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1063
+1651,1961,0-27,$69.95 ,"Passenger, horn","8 c, 3 s, 6029",1063
+1652,1961,0-27,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, 1008-50",1073
+1800,"1959, 1960",0-27,$25.00 ,"Passenger, no whistle",None,None
+1805,1960,0-27,$35.00 ,Freight,None,None
+1809,1961,0-27,$29.95 ,"Freight, no whistle, smoke",None,None
+1810,1961,0-27,$35.00 ,"Freight, no horn",None,None
+2100,1946,O,$37.50 ,"Passenger, no whistle","8 c, 3 s, RCS",None
+2101,1946,O,$37.50 ,"Freight, no whistle","8 c, 3 s, RCS",None
+2527,"1959, 1960",Super O,$39.95 ,Freight,"12 c, 1 s, 1 insulated, 39-25",None
+2570,1961,Super O,$49.95 ,"Freight, no horn","12 c, 2 s, 39-25",None
+2571,1961,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 2 s, 39-25",None
+2572,1961,Super O,$59.95 ,"Freight, horn","12 c, 4 s, 39-25",None
+2573,1961,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 4 s, 39-25",None
+2574,1961,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 half s, 39-25",None
+2575,1961,Super O,$100.00 ,"Freight, horn","12 c, 6 s, 39-35",None
+2576,1961,Super O,$100.00 ,"Passenger, horn","12 c, 6 s, 39-25",None
+11001,1962,0-27,N/A,"Freight, no whistle","8 c,2 s",1026
+11011,1962,0-27,N/A,"Freight, no horn","8 c,2 s",1026
+11201,1962,0-27,$19.95 ,"Freight, no whistle","8 c, 2 s",1010
+11212,1962,0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 1008-50",1010
+11222,1962,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 1008-50",1025
+11232,1962,0-27,$29.95 ,"Freight, no horn","8 c, 1 s, 1008-50",1025
+11242,1962,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1073
+11252,1962,0-27,$39.95 ,"Freight, no horn","8 c, 3 s, 1008-50",1025
+11268,1962,0-27,$49.95 ,"Freight, no horn","8 c, 3 s, 6029",1073
+11278,1962,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50","1073, 147"
+11288,1962,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 1008-50","1073, 147"
+11298,1962,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1063
+11308,1962,0-27,$69.95 ,"Passenger, no horn","8 c, 3 s, 6029",1063
+11311,1963,0-27,$14.95 ,"Freight, no whistle",8 c,1026
+11321,1963,0-27,$16.95 ,"Freight, no horn","8 c, 2 s",1026
+11331,1963,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6139",1010
+11341,1963,0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 6139",1010
+11351,1963,0-27,$29.95 ,"Freight, no whistle","8 c, 1 s, 6139",1025
+11361,1963,0-27,$35.00 ,"Freight, no horn","8 c, 3 s, 6139",1025
+11375,1963,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6139","1073, 147"
+11385,1963,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6139","1073, 147"
+11395,1963,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029","1073, 147"
+11405,1963,0-27,$69.95 ,"Passenger, horn","8 c, 3 s, 6029","1073, 147"
+11415,1963,0-27,N/A,"Freight, no whistle","8 c, 2 s",1026
+11420,1964,0-27,$11.95 ,"Freight, no whistle",8 c,1026
+11430,1964,0-27,$14.95 ,"Freight, no whistle","8 c, 1 s, 6149",1026
+11440,1964,0-27,$17.95 ,"Freight, no horn","8 c, 1 s, 6149",1026
+11450,1964,0-27,$19.95 ,"Freight, no whistle","8 c, 1 s, 6149",1010
+11460,1964,0-27,$34.95 ,"Freight, whistle, smoke","8 c, 1 s, 6149","1073, 147"
+11470,1964,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6149",1025
+11480,1964,0-27,$34.95 ,"Freight, no horn","12 c, 3 s, 6149, 90 Xing",1025
+11490,"1964, 1965",0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6149","1073, 147"
+11500,"1964, 1965, 1966",0-27,$44.95 ,"Freight, whistle, smoke","8 c, 3 s, 6149","1073, 147"
+11510,1964,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6149",1025
+11520,"1965, 1966",0-27,$20.00 ,"Freight, no whistle","8 c, 1 s, 6149",1010
+11530,"1965, 1966",0-27,$25.00 ,"Freight, no horn","8 c, 1 s, 6149",1010
+11540,"1965, 1966",0-27,$30.00 ,"Freight, no whistle, smoke","8 c, 1 s, 6149",1025
+11550,"1965, 1966",0-27,$40.00 ,"Freight, whistle, smoke","8 c, 1 s, 6149","1073, 147"
+11560,"1965, 1966",0-27,$37.50 ,"Freight, no horn","12 c, 3 s, 6149, 90 Xing",1025
+11590,1966,O,$60.00 ,"Passenger, horn","8 c, 3 s, 6149","1073, 147"
+11600,1968,0-27,N/A,"Freight, whistle, smoke","12 c, 6 s, 1122 LH, 1020 Xing, 6149",1044
+11710,1969,0-27,N/A,"Freight, no whistle, ","8 c, 2 s",1025
+11720,1969,0-27,N/A,"Freight, no horn","8 c, 3 s, 6149",1025
+11730,1969,0-27,N/A,"Freight, no horn","8 c, 5 s, 6149",1025
+11740,1969,0-27,N/A,"Freight, no horn","8 c, 7 s, 6149",1025
+11750,1969,0-27,N/A,"Freight, no whistle, smoke","8 c, 7 s, 6149",1025
+11760,1969,0-27,N/A,"Freight, whistle, smoke","8 c, 7 s, 6149",1044
+12502,1962,0-27,$35.00 ,"Passenger, no whistle",None,None
+12512,1962,0-27,$39.95 ,"Freight, no horn",None,None
+12700,1964,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+12710,"1964, 1965, 1966",O,$75.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",LW
+12720,1964,O,$65.00 ,"Freight, horn","8 c, 5 s, UCS",None
+12730,"1964, 1965, 1966",O,$79.95 ,"Freight, horn","8 c, 5 s, UCS",LW
+12780,"1964, 1965, 1966",O,$120.00 ,"Passenger, horn","8 c, 5 s, UCS",None
+12800,"1965, 1966",O,$60.00 ,"Freight, horn","8 c, 5 s, UCS",None
+12820,1965,O,$100.00 ,"Freight, horn","8 c, 5 s, UCS",LW
+12840,1966,O,$80.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",LW
+12850,1966,O,$135.00 ,"Freight, horn","10 c, 14 s, UCS, pr O22T sw",LW
+13008,1962,Super O,$49.95 ,"Freight, whistle, smoke","8 c, 1 s, 1 half s, 39-25",None
+13018,1962,Super O,$49.95 ,"Freight, no horn","8 c, 1 s, 1 half s, 39-25",None
+13028,1962,Super O,$59.95 ,"Freight, no horn","8 c, 1 s, 1 half s, 39-25",None
+13036,1962,Super O,$59.95 ,"Passenger, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None
+13048,1962,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None
+13058,1962,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 half s, 39-25",None
+13068,1962,Super O,$100.00 ,"Freight, horn","12 c, 5 s, 1 half s, 39-25",None
+13078,1962,Super O,$125.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None
+13088,1962,Super O,$120.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None
+13098,1963,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None
+13108,1963,Super O,$49.95 ,"Freight, horn","12 c, 1 s, 1 half s, 39-25",None
+13118,1963,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 1 s, 1 half s, 39-25",None
+13128,1963,Super O,$89.95 ,"Freight, horn","12 c, 1 s, 1 half s, 39-25",None
+13138,1963,Super O,$100.00 ,"Freight, horn","12 c, 5 s, 1 half s, 39-25",None
+13148,1963,Super O,$120.00 ,"Passenger, horn","12 c, 5 s, 1 half s, 39-25",None
+13150,"1964, 1965, 1966",O,$200.00 ,"Freight, whistle, smoke","16 c, 19 s, 4 half s, 112 pr sw, 39-25",ZW
+1000W,1955,0-27,$39.95 ,"Freight, no whistle","8 c, 3 s, 6029",1033
+1400W,1946,0-27,$35.95 ,"Passenger,  whistle","8 c, 3 s, 1019",1041
+1401W,1946,0-27,$30.95 ,"Freight, whistle","8 c. 1 s, 1019",1041
+1402W,1946,0-27,$35.95 ,"Passenger, whistle","8 c, 3 s, 1019",1041
+1403W,1946,0-27,$35.95 ,"Freight, whistle","8 c, 3 s, 1019",1041
+1405W,1946,0-27,$35.95 ,"Freight, whistle","8 c, 3 s, 1019",1041
+1407B,1946,0-27,$37.50 ,"Freight, bell ringing tender","8 c, 5 s, 1019",1037
+1409W,1946,0-27,$45.95 ,"Freight, whistle","8 c, 5 s, 1019",1041
+1411W,1946,0-27,$42.50 ,"Freight, whistle","8 c, 3 s, 1019",1041
+1413WS,1946,0-27,$55.00 ,"Freight, whistle, smoke","8 c, 3 s, 1019",1041
+1415WS,1946,0-27,$67.50 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041
+1417WS,1946,0-27,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, 1019",1041
+1419WS,1946,0-27,$85.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041
+1421WS,1946,0-27,$85.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",1041
+1423W,"1948, 1949",0-27,$29.95 ,"Freight, whistle","8 c, 3 s, 6019",1042
+1425B,"1948, 1949",0-27,$35.95 ,"Freight, bell ringing tender","8 c, 3 s, 6019",1034
+1426WS,"1948, 1949",0-27,$42.75 ,"Passenger, whistle, smoke","8 c, 3 s, 6019",1032
+1427WS,1948,0-27,$39.75 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1032
+1429WS,1948,0-27,$47.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1430WS,"1948, 1949",0-27,$59.75 ,"Passenger, whistle, smoke","8 c, 7 s, 6019",1033
+1431W,1947,0-27,$27.50 ,"Freight, whistle","8 c, 1 s, 1019",1042
+1432W,1947,0-27,$33.50 ,"Passenger, whistle","8 c, 3 s, 1019",1042
+1433W,1947,0-27,$33.50 ,"Freight, whistle","8 c, 3 s, 1019",1042
+1434WS,1947,0-27,$42.50 ,"Passenger, whistle, smoke","8 c, 3 s, 1019",S
+1435WS,1947,0-27,$42.50 ,"Freight, whistle, smoke","8 c, 3 s, 1019",S
+1437WS,1947,0-27,$47.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S
+1439WS,1947,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S
+1441WS,1947,0-27,$57.50 ,"Freight, whistle, smoke","8 c, 5 s, 1019",S
+1443WS,1947,0-27,$70.00 ,"Freight, whistle, smoke","10 c, 5 s, 1019, pr 1121 switches",S
+1445WS,1948,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1447WS,"1948, 1949",0-27,$59.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1449WS,1948,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 11 s, 6019",1033
+1451WS,1949,0-27,$39.75 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1453WS,1949,0-27,$47.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1455WS,1949,0-27,$52.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1457B,"1949, 1950",0-27,"$49.50 (1949), $39.95 (1950)","Freight, bell ringing switcher","8 c, 5 s, 6019",1034
+1459WS,1949,0-27,$67.50 ,"Freight, whistle, smoke","8 c, 11 s, 6019",1033
+1461S,1950,0-27,$19.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6019",1012
+1463W,"1950, 1951",0-27,"$29.95 (1950), $35.75 (1951)","Freight, whistle, 2036 (1950), 2026 (1951)","8 c, 3 s, 6019",1033
+1464W,"1950, 1951, 1952, 1953",0-27,"$55.00 (1950), $66.50 (1951, 2, 3)","Passenger, horn, 2033 vice 2023 in 1952","8 c, 5 s, 6019",1033
+1467W,"1950, 1951, 1952, 1953",0-27,"$47.50 (1950), $57.50 (1951, 2, 3)","Freight, horn","8 c, 5 s, 6019",1033
+1467W,1952,0-27,$57.50 ,"Freight, horn","8 c, 5 s, 6019",1033
+1469WS,"1950, 1951",0-27,"$39.95 (1950), $48.50 (1951)","Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1471WS,"1950, 1951",0-27,"$57.50 (1950), $70.00 (1951)","Freight, whistle, smoke","8 c, 7 s, 6019",1033
+1473WS,"1950, 1951",0-27,"$49.95 (1950), $62.50 (1951)","Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 5 s, 6019",1033
+1475WS,1950,0-27,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033
+1477S,"1951, 1952",0-27,$29.95 ,"Freight, no whistle","8 c, 3 s, 6019",1034
+1479WS,1952,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1481WS,1951,0-27,$70.00 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033
+1483WS,1952,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, 6019",1033
+1484WS,1952,0-27,$70.00 ,"Passenger, whistle, smoke","8 c, 7 s, 6019",1033
+1485WS,1952,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1489WS,1952,0-27,$45.00 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1501S,1953,0-27,$24.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043
+1502WS,1953,0-27,$57.50 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033
+1503WS,"1953, 1954",0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1505WS,1953,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1507WS,1953,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1509WS,1953,0-27,$70.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1511S,1953,0-27,$32.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6019",1043
+1513S,"1954, 1955",0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6009",1043
+1515WS,1954,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1516WS,1954,0-27,$59.95 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033
+1517W,1954,0-27,$59.95 ,"Freight, horn","8 c, 5 s, 6019",1033
+1519WS,1954,0-27,$65.00 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1520W,1954,0-27,$69.50 ,"Passenger, horn","8 c, 5 s, 6019",1033
+1521WS,1954,0-27,$69.50 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1526S,1955,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1014
+1531W,1955,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6019",1033
+1533WS,1955,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1033
+1534W,1955,0-27,$49.95 ,"Passenger, horn","8 c, 3 s, 6019",1033
+1535W,1955,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6019",1033
+1536W,1955,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1033
+1537WS,1955,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1538WS,1955,0-27,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, 6019",1033
+1539W,1955,0-27,$65.00 ,"Freight, horn","8 c, 5 s, 6019",1033
+1541WS,1955,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1547S,1956,0-27,$33.50 ,"Freight, no whistle, smoke","8 c, 1 s, 6029",1015
+1551W,1956,0-27,$39.95 ,"Freight, horn","8 c, 3 s, 6029",1053
+1553W,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+1555WS,1956,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053
+1557W,1956,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+1559W,1956,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6019",1053
+1561WS,1956,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6019",1053
+1562W,1956,0-27,$59.95 ,"Passenger, horn","8 c, 3 s, 6019",1053
+1563W,1956,0-27,$67.50 ,"Freight, horn","8 c, 5 s, 6019",1033
+1565WS,1956,0-27,$69.95 ,"Freight, whistle, smoke","8 c, 5 s, 6019",1033
+1567W,1956,0-27,$75.00 ,"Freight, horn","8 c, 5 s, 6019",1033
+1577S,1957,0-27,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015
+1578S,1957,0-27,$43.75 ,"Passenger, no whistle, smoke","8 c, 3 s, 6029",1015
+1579S,1957,0-27,$43.75 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1043
+1583WS,1957,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+1585W,1957,0-27,$49.95 ,"Freight, horn","8 c, 5 s, 6029",1053
+1587S,"1957, 1958",0-27,$49.95 ,"Freight, no whistle, smoke","8 c, 5 s, 6029",1043-500
+1589WS,1957,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044
+1597S,1958,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015
+1601W,1958,0-27,$49.95 ,"Freight, horn","8 c, 3 s. 6029",1053
+1603WS,1958,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+1605W,1958,0-27,$55.00 ,"Freight, horn","8 c, 3 s, 6029",1053
+1607WS,1958,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1044
+1608W,1958,0-27,$65.00 ,"Passenger, horn","8 c, 5 s, 6029",1053
+1613S,1959,0-27,$29.95 ,"Freight, no whistle, smoke","8 c, 1 s, 1008-50",1015
+1617S,1959,0-27,$39.95 ,"Freight, no whistle, smoke","8 c, 3 s, 6029",1015
+1619W,1959,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6029",1053
+1621WS,1959,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+1623W,1959,0-27,$59.95 ,"Freight, horn","8 c, 3 s, 6029",1053
+1625WS,1959,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, 6029",1053
+1626W,1959,0-27,$65.00 ,"Passenger, horn","8 c, 5 s, 6029",1053
+1627S,1960,0-27,$25.00 ,"Freight, no whistle, smoke","8 c, 1 s, 1008-50",1015
+1631WS,1960,0-27,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, 1008-50",1053
+1635WS,1960,0-27,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+1637W,1960,0-27,$49.95 ,"Freight, horn","8 c, 3 s, 6029",1053
+1639WS,1960,0-27,$59.95 ,"Freight, whistle, smoke","8 c, 3 s, 6029",1053
+1640W,1960,0-27,$65.00 ,"Passenger, horn, 1640 Pres Whsl Stop Kit","8 c, 3 s, 6029",1053
+2100W,1946,O,$43.50 ,"Passenger, whistle","8 c, 3 s, RCS","None, 167"
+2101W,1946,O,$43.50 ,"Freight, whistle","8 c, 3 s, RCS","None, 167"
+2103W,1946,O,$45.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2105WS,1946,O,$50.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2110WS,1946,O,$75.00 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2111WS,1946,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2113WS,1946,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167"
+2114WS,1946,O,$77.50 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2115WS,1946,O,$87.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2120S,1947,O,$37.50 ,"Freight, no whistle, smoke","8 c, 3 s, RCS","None, 88"
+2120WS,1947,O,$43.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2121S,1947,O,$35.00 ,"Freight, no whistle, smoke","8 c, 3 s, RCS","None, 88"
+2121WS,1947,O,$41.00 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2123WS,1947,O,$47.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS","None, 167"
+2124W,1947,O,$62.50 ,"Passenger, horn","8 c, 5 s, RCS","None, 167"
+2125WS,1947,O,$50.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2126WS,1947,O,$65.00 ,"Passenger, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2127WS,1947,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS","None, 167"
+2129WS,1947,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167"
+2131WS,1947,O,$75.00 ,"Freight, whistle, smoke","8 c, 7 s, RCS","None, 167"
+2133W,1948,O,$65.00 ,"Freight, horn","8 c, 7 s, RCS",None
+2135WS,1948,O,$39.95 ,"Freight, whistle, smoke","8 c, 3 s, RCS",None
+2135WS,1949,O,$37.50 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None
+2136WS,1948,O,$42.50 ,"Passenger, whistle, smoke","8 c, 3 s, RCS",None
+2136WS,1949,O,$39.95 ,"Passenger, whistle, smoke","8 c, 3 s, UCS",None
+2137WS,1948,O,$47.50 ,"Freight, whistle, smoke","8 c, 3 s, RCS",None
+2139W,1948,O,$57.50 ,"Freight, horn","8 c, 5 s, RCS",None
+2139W,1949,O,$57.50 ,"Freight, horn","8 c, 5 s, UCS",None
+2140WS,"1948, 1949",O,$57.75 ,"Passenger, whistle, smoke","8 c, 5 s, RCS (1948), UCS (1949)",None
+2141WS,1948,O,$58.75 ,"Freight, whistle, smoke","8 c, 5 s, RCS",None
+2141WS,1949,O,$57.50 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2143WS,1948,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, RCS",None
+2144W,"1948, 1949",O,$67.50 ,"Passenger, horn","8 c, 5 s, RCS (1948), UCS (1949)",None
+2145WS,1948,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, RCS",None
+2146WS,"1948, 1949",O,$75.00 ,"Passenger, whistle, smoke","8 c, 7 s, RCS (1948), UCS (1949)",None
+2147WS,1949,O,$50.00 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None
+2148WS,1950,O,$85.00 ,"Passenger, whistle, smoke","8 c, 7 s, UCS",None
+2149B,1949,O,$52.50 ,"Freight, bell ringing switcher","8 c, 5 s, UCS",None
+2150WS,1950,O,$55.00 ,"Passenger, whistle, smoke","8 c, 5 s, UCS",None
+2151W,1949,O,$67.50 ,"Freight, horn","8 c, 9 s, UCS",None
+2153WS,1949,O,$60.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2155WS,1949,O,$67.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2159W,1950,O,$52.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2161W,1950,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2163WS,"1950, 1951",O,"$49.95 (1950), $60.00 (1951)","Freight, whistle, smoke","8 c, 7 s, UCS",None
+2165WS,1950,O,$57.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2167WS,"1950, 1951",O,"$39.95 (1950), $47.75 (1951)","Freight, whistle, smoke","8 c, 5 s, UCS",None
+2169WS,1950,O,$79.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2171W,1950,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2173WS,"1950, 1951",O,"$52.50 (1950), $62.50 (1951)","Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
+2175W,"1950, 1951",O,"$57.50 (1950), $70.00 (1951)","Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
+2177WS,1952,O,$39.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2179WS,1952,O,$47.75 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2183WS,1952,O,$54.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2185W,"1950, 1951",O,"$57.50 (1950), $70.00 (1951)","Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
+2187WS,1952,O,$62.50 ,"Freight, whistle, smoke","8 c, 7 s. UCS",None
+2189WS,1952,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2190W,1952,O,$89.50 ,"Passenger, horn","8 c, 9 s, UCS",None
+2190W,1953,O,$89.50 ,"Passenger, horn","8 c, 9 s, UCS",None
+2191W,1952,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2193W,1952,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2201WS,"1953, 1954",O,$39.95 ,"Freight, whistle, smoke, 665 vice 685 in 1954","8 c, 5 s, UCS",None
+2203WS,1953,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2205WS,1953,O,$59.75 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2207W,1953,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2209W,1953,O,$70.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2211WS,1953,O,$62.50 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2213WS,1953,O,$70.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2217WS,1954,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2219W,1954,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None
+2221WS,1954,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2222WS,1954,O,$65.00 ,"Passenger, whistle, smoke","8 c, 7 s, UCS",None
+2223W,1954,O,$67.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2225WS,1954,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2227W,1954,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2229W,1954,O,$69.50 ,Freight horn,"8 c, 7 s, UCS",None
+2231W,1954,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2234W,1954,O,$89.50 ,"Passenger, horn","8 c, 9 s, UCS",None
+2235W,1955,O,$39.95 ,"Freight, horn","8 c, 5 s, UCS",None
+2237WS,1955,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2239W,1955,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None
+2241WS,1955,O,$55.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2243W,1955,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None
+2244W,1955,O,$65.00 ,"Passenger, horn","8 c, 7 s, UCS",None
+2245WS,1955,O,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2247W,1955,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2249WS,1955,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2251W,1955,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2253W,1955,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2254W,1955,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None
+2255W,1956,O,$39.95 ,"Freight, horn","8 c, 3 s, UCS",None
+2257WS,1956,O,$49.95 ,"Freight, whistle, smoke","8 c, 3 s, UCS",None
+2259W,1956,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None
+2261WS,1956,O,$59.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2263W,1956,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2265WS,1956,O,$69.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2267W,1956,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None
+2269W,1956,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2270W,1956,O,$75.00 ,"Passenger, horn","8 c, 7 s, UCS",None
+2271W,1956,O,$79.50 ,"Freight, horn","8 c, 7 s, UCS",None
+2273W,1956,O,$85.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2274W,1956,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None
+2275W,1957,O,$49.95 ,"Freight, horn","8 c, 5 s, UCS",None
+2276W,1957,O,$49.95 ,"Passenger, horn","8 c, 7 s, UCS",None
+2277WS,1957,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+2279W,1957,O,$55.00 ,"Freight, horn","8 c, 7 s, UCS",None
+2281W,1957,O,$59.95 ,"Freight, horn","8 c, 7 s, UCS",None
+2283WS,1957,O,$59.95 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+2285W,1957,O,$69.95 ,"Freight, horn","8 c, 7 s, UCS",None
+2287W,1957,O,$69.95 ,"Freight, horn","8 c, 9 s, UCS",None
+2289WS,1957,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+2291W,1957,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+2292WS,1957,Super O,$85.00 ,"Passenger, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None
+2293W,1957,Super O,$87.50 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+2295WS,1957,Super O,$87.50 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+2296W,1957,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None
+2297WS,1957,Super O,$110.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-20",None
+2501W,1958,Super O,$49.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None
+2502W,1958,Super O,$59.95 ,"Passenger, horn","12 c, 3 s, 1 insulated, 39-5",None
+2503WS,1958,Super O,$59.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+2505W,1958,Super O,$59.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None
+2507W,1958,Super O,$65.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None
+2509WS,1958,Super O,$65.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-5",None
+2511W,1958,Super O,$69.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-10",None
+2513W,1958,Super O,$69.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+2515WS,1958,Super O,$75.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-20",None
+2517W,1958,Super O,$75.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None
+2518W,1958,Super O,$75.00 ,"Passenger, horn","12 c, 3 s, 1 insulated, 39-5",None
+2519W,1958,Super O,$79.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-5",None
+2521WS,1958,Super O,$89.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-15",None
+2523W,1958,Super O,$95.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
+2525WS,1958,Super O,$100.00 ,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-5",None
+2526W,1958,Super O,$100.00 ,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None
+2528WS,"1959, 1960, 1961",Super O,$49.95 ,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
+2529W,1959,Super O,$59.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
+2531WS,1959,Super O,$59.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
+2533W,1959,Super O,$65.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
+2535WS,1959,Super O,$69.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-35",None
+2537W,1959,Super O,$75.00 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
+2539WS,1959,Super O,$79.95 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-35",None
+2541W,1959,Super O,$89.95 ,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
+2543WS,1959,Super O,$95.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
+2544W,"1959, 1960",Super O,$100.00 ,"Passenger, horn","12 c, 5 s, 1 insulated, 39-25",None
+2545WS,1959,Super O,$100.00 ,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
+2547WS,1960,Super O,$49.95 ,"Freight, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
+2549W,1960,Super O,$59.95 ,"Freight, horn","18 c, 2 s, 5 half s, 1 insulated, 39-25",None
+2551W,1960,Super O,$75.00 ,"Freight, horn","24 c, 13 s, 1 insulated, 39-25",None
+2553W,1960,Super O,$100.00 ,"Freight, whistle, smoke","18 c, 7 s, 2 half c, 6 half s, 1 insulated, 90 Xing, LH sw, 39-35",None
+2555W,1960,Super O,$150.00 ,"Freight, horn, & complementing HO pieces","12 c, 3 s, 1 insulated, 39-25",1044
+4109WS,"1946, 1947",O,$75.00 ,"Electronic freight, whistle, smoke","8 c, 4 s","None, ECU-1"
+4110WS,"1948, 1949",O,$199.95 ,"Electronic freight, whistle, smoke","10 c, 18 s, 2 half s, pr O-22 switches","VW, ECU-1"
+463W,1945,O,$33.50 ,Freight ,"8 c, 3 s, RCS","None, 167"
+A-20,1955,O,$39.95 ,"Freight, horn","8 c, 5 s, UCS",None
+A-21,1955,O,$49.95 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+A-22,1955,O,$55.00 ,"Freight, horn","8 c, 5 s, UCS",None
+A-23,1955,O,$55.00 ,"Freight, whistle, smoke","8 c, 5 s, UCS",None
+A-24,1955,O,$59.95 ,"Freight, horn","8 c, 5 s, UCS",None
+A-25,1955,O,$65.00 ,"Passenger, horn","8 c, 7 s, UCS",None
+A-26,1955,O,$65.00 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+A-27,1955,O,$65.00 ,"Freight, horn","8 c, 7 s, UCS",None
+A-28,1955,O,$69.50 ,"Freight, whistle, smoke","8 c, 7 s, UCS",None
+A-29,1955,O,$69.50 ,"Freight, horn","8 c, 7 s, UCS",None
+A-30,1955,O,$75.00 ,"Freight, horn","8 c, 7 s, UCS",None
+A-31,1955,O,$100.00 ,"Passenger, horn","8 c, 11 s, UCS",None
